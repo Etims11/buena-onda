@@ -2,7 +2,7 @@
 <html>
 	
 	<head>
-		<title>Buena Onda</title>
+		<title>Contactez Buena Onda</title>
 		
 		<!-- METAS -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -87,12 +87,12 @@
 	</header>
 	
 	<?php
-		$page = "home";
+		$page = "contact";
 		include('includes/menu.php');
 	?>
 	
 	<section id="body">
-		<h1>Accueil</h1>
+		<h1>Contact</h1>
 	</section>
 	
 	<footer>

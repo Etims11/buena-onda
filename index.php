@@ -84,6 +84,7 @@
 	<header>
 		<h1 id="logo">BUENA<span>ONDA</span></h1>
 		<h2>L'empanada dans tous ses états!</h2>
+		<p>Test de modif avec Git</p>
 	</header>
 	
 	<nav class="menu menu--adrian">

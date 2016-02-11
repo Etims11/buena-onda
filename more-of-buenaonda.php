@@ -2,7 +2,7 @@
 <html>
 	
 	<head>
-		<title>Buena Onda</title>
+		<title>Buena Onda c'est aussi...</title>
 		
 		<!-- METAS -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,8 +36,12 @@
 		<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
 		
 		<!-- STYLES -->
+		<link rel="stylesheet" media="screen" type="text/css" href="css/resetCSS.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 	</head>
 
 <body>
@@ -82,12 +86,13 @@
 		<h2>L'empanada dans tous ses états!</h2>
 	</header>
 	
-	<nav id="menu">
-		
-	</nav>
+	<?php
+		$page = "more";
+		include('includes/menu.php');
+	?>
 	
 	<section id="body">
-		
+		<h1>Buena Onda c'est aussi...</h1>
 	</section>
 	
 	<footer>
@@ -95,7 +100,34 @@
 	</footer>
 
 <!-- JAVASCRIPTS -->
-
+<!-- Menu -->
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript">
+	(function() {
+		[].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
+			var menuItems = menu.querySelectorAll('.menu__link'),
+				setCurrent = function(ev) {
+					ev.preventDefault();
+	
+					var item = ev.target.parentNode; // li
+	
+					// return if already current
+					if (classie.has(item, 'menu__item--current')) {
+						return false;
+					}
+					// remove current
+					classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
+					// set current
+					classie.add(item, 'menu__item--current');
+				};
+	
+			[].slice.call(menuItems).forEach(function(el) {
+				el.addEventListener('click', setCurrent);
+			});
+		});
+	
+	})(window);
+</script>
 
 <!-- Simple Slide Menu -->
 <script type="text/javascript" src="js/menu.js"></script>

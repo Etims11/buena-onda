@@ -36,8 +36,12 @@
 		<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
 		
 		<!-- STYLES -->
+		<link rel="stylesheet" media="screen" type="text/css" href="css/resetCSS.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 	</head>
 
 <body>
@@ -82,8 +86,15 @@
 		<h2>L'empanada dans tous ses états!</h2>
 	</header>
 	
-	<nav id="menu">
-		
+	<nav class="menu menu--adrian">
+		<ul class="menu__list">
+			<li class="menu__item menu__item--current"><a href="#" class="menu__link"><span class="menu__helper">Accueil</span></a></li>
+			<li class="menu__item"><a href="#" class="menu__link"><span class="menu__helper">Carte</span></a></li>
+			<li class="menu__item"><a href="#" class="menu__link"><span class="menu__helper">Réserver</span></a></li>
+			<li class="menu__item"><a href="#" class="menu__link"><span class="menu__helper">Commander</span></a></li>
+			<li class="menu__item"><a href="#" class="menu__link"><span class="menu__helper">BO c'est aussi</span></a></li>
+			<li class="menu__item"><a href="#" class="menu__link"><span class="menu__helper">Contact</span></a></li>
+		</ul>
 	</nav>
 	
 	<section id="body">
@@ -95,7 +106,34 @@
 	</footer>
 
 <!-- JAVASCRIPTS -->
-
+<!-- Menu -->
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript">
+	(function() {
+		[].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
+			var menuItems = menu.querySelectorAll('.menu__link'),
+				setCurrent = function(ev) {
+					ev.preventDefault();
+	
+					var item = ev.target.parentNode; // li
+	
+					// return if already current
+					if (classie.has(item, 'menu__item--current')) {
+						return false;
+					}
+					// remove current
+					classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
+					// set current
+					classie.add(item, 'menu__item--current');
+				};
+	
+			[].slice.call(menuItems).forEach(function(el) {
+				el.addEventListener('click', setCurrent);
+			});
+		});
+	
+	})(window);
+</script>
 
 <!-- Simple Slide Menu -->
 <script type="text/javascript" src="js/menu.js"></script>

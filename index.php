@@ -93,7 +93,6 @@
 	
 	<section id="body">
 		<h1>Accueil</h1>
-        <p> Je suis une phrase de merde, salut !</p>
 	</section>
 	
 	<footer>

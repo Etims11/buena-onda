@@ -39,7 +39,9 @@
 		<link rel="stylesheet" media="screen" type="text/css" href="css/resetCSS.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
-        <link rel='stylesheet' id='camera-css' media='all' type='text/css' href='css/camera.css'>
+        
+        <link rel='stylesheet' id='camera-css' media='all' type='text/css' href='css/camera.css'> 
+
         
         
         
@@ -123,11 +125,8 @@
 	<section id="body">
 		<h1>Accueil</h1>
 	</section>
-	
     
-    
-    <!-- MON AJOUT -->
-     <section id="slider">
+    <section id="slider">
         
         <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
             <div data-src="img/slider/slides/slide-1.jpg">
@@ -142,11 +141,7 @@
         </div>
         
     </section>
-    
-    
-    
-    
-    
+	
 	<footer>
 		
 	</footer>

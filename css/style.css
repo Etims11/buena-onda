@@ -343,21 +343,54 @@ header h2 {
 #youAndUs .oneOfThree p.link a { color: #0899d5; }
 #youAndUs .oneOfThree p.link a:hover, #youAndUs .oneOfThree p.link a:focus { color: #c2a472; }
 
-/*========================*/
-/*======== Footer ========*/
-/*========================*/
-footer p {
-	text-align: center;
-	font-size: 1em;
-	padding: 30px 0;
+@media only screen and (max-width: 1280px) {
+	#youAndUs .oneOfThree h2 { min-height: 80px; }
+	#youAndUs .oneOfThree h2 span.lineBlue { height: 1.8em; }
+	#youAndUs .regal h2 span.line, #youAndUs .invite h2 span.line, #youAndUs .voyage h2 span.line { width: 28%; }
+	#youAndUs .regal h2 span.title, #youAndUs .invite h2 span.title, #youAndUs .voyage h2 span.title { width: 44%; }
+	#youAndUs .invite h2.blueTitle span.line, #youAndUs .voyage h2.blueTitle span.line { width: 12%; }
+	#youAndUs .invite h2.blueTitle span.title, #youAndUs .voyage h2.blueTitle span.title { width: 76%; }
 }
-footer p a { color: #0899d5; }
-footer p a:hover, footer p a:focus {
-	color: #c2a472;
-	text-decoration: underline;
+@media only screen and (max-width: 1120px) {
+	#youAndUs .regal h2 span.line, #youAndUs .invite h2 span.line, #youAndUs .voyage h2 span.line { width: 10%; }
+	#youAndUs .regal h2 span.title, #youAndUs .invite h2 span.title, #youAndUs .voyage h2 span.title { width: 80%; }
 }
-footer p a.author { color: #c2a472; }
-footer p a.author:hover, footer p a.author:focus { text-decoration: underline; }
+
+/* Responsive Tablette */
+@media only screen and (max-width: 960px) {
+	#youAndUs .oneOfThree {
+		width: 40%;
+		margin: 0 5%;
+	}
+	#youAndUs .voyage { margin: 0 30%; }
+}
+@media only screen and (max-width: 800px) {
+	#youAndUs .oneOfThree {
+		width: 46%;
+		margin: 0 2%;
+	}
+	#youAndUs .voyage { margin: 0 28%; }
+}
+
+/* Responsive Smartphone */
+@media only screen and (max-width: 600px) {
+	#youAndUs .oneOfThree {
+		float: none;
+		width: 100%;
+		max-width: 385px;
+		margin: 0 auto 30px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	#youAndUs .oneOfThree { width: 70%; }
+	#youAndUs .regal h2, #youAndUs .invite > h2 { min-height: 40px; }
+}
+@media only screen and (max-width: 380px) {
+	#youAndUs .oneOfThree h2 span.line { display: none; }
+	#youAndUs .oneOfThree h2 span.title {
+		width: 100% !important;
+	}
+}
 
 /*==========================*/
 /*======== Mentions ========*/
@@ -381,3 +414,19 @@ footer p a.author:hover, footer p a.author:focus { text-decoration: underline; }
 	color: #c2a472;
 	text-decoration: underline;
 }
+
+/*========================*/
+/*======== Footer ========*/
+/*========================*/
+footer p {
+	text-align: center;
+	font-size: 1em;
+	padding: 30px 5%;
+}
+footer p a { color: #0899d5; }
+footer p a:hover, footer p a:focus {
+	color: #c2a472;
+	text-decoration: underline;
+}
+footer p a.author { color: #c2a472; }
+footer p a.author:hover, footer p a.author:focus { text-decoration: underline; }

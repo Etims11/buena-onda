@@ -81,20 +81,59 @@ a {
 header {
 	font-family: 'VAG Rounded Bold';
 	text-align: center;
+	max-width: 1300px;
+	margin: 0 auto;
 }
 header h1 {
-	font-size: 10em;
-	letter-spacing: 0.2em;
+	font-size: 9.5em;
+	letter-spacing: 0.15em;
 	text-align: center;
 	margin: 26px auto 0;
 }
 header h1 span { color: #049ede; }
 header h2 {
-	font-size: 2.1em;
-	letter-spacing: 0.1em;
+	max-width: 1300px;
+	font-size: 1.9em;
+	letter-spacing: 0.08em;
 	text-transform: uppercase;
-	margin: -8px auto 35px;
+	margin: 2px auto 35px;
 }
+
+/* Social Icons */
+#social {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	width: 42px;
+	height: 290px;
+	z-index: 99999;
+}
+#social a.icon {
+	display: block;
+	background: url(../img/social-icons.png) no-repeat;
+	margin-bottom: 10px;
+}
+#social a.facebook {
+	width: 41px;
+	height: 42px;
+	background-position: 0 0;
+}
+#social a.instagram {
+	width: 42px;
+	height: 42px;
+	background-position: -41px 0;
+}
+#social a.twitter {
+	width: 41px;
+	height: 42px;
+	background-position: -83px 0;
+}
+#social a.gplus {
+	width: 41px;
+	height: 42px;
+	background-position: -124px 0;
+}
+#social a:hover, #social a:focus { background-position-y: -42px; }
 
 @media only screen and (max-width: 1330px) {
 	header h1 {
@@ -109,16 +148,16 @@ header h2 {
 }
 
 /* Responsive Tablette */
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 960px) {
 	header h1 { font-size: 4.5em; }
 	header h2 {
-		font-size: 1.4em;
-		margin: -10px auto 35px;
+		font-size: 1.2em;
+		margin: 0px auto 35px;
 	}
 }
 
 /* Responsive Smartphone */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 660px) {
 	header h1 { font-size: 2.5em; }
 	header h2 {
 		font-size: 1em;
@@ -126,6 +165,7 @@ header h2 {
 		margin: 0px auto 35px;
 	}
 }
+@media only screen and (max-width: 480px) { #social { top: 90px; } }
 
 /*======================*/
 /*======== Menu ========*/
@@ -133,7 +173,7 @@ header h2 {
 
 /* Computer */
 .menu {
-	max-width: 1200px;
+	max-width: 1300px;
 	line-height: 1;
 	margin: 0 auto 60px;
 }
@@ -240,4 +280,104 @@ header h2 {
 		-webkit-transform: translate3d(0, 0, 0);
 		transform: translate3d(0, 0, 0);
 	}
+}
+
+/* Responsive Tablette */
+@media only screen and (max-width: 960px) {
+	.menu__item { width: 32.5%; }
+}
+
+/*======================*/
+/*======== Home ========*/
+/*======================*/
+#youAndUs {
+	max-width: 1300px;
+	margin: 70px auto 60px;
+	padding: 0 1%;
+}
+#youAndUs .oneOfThree {
+	float: left;
+	width: 29.3%;
+	margin: 0 2%;
+}
+#youAndUs .oneOfThree h2.blueTitle { color: #0899d5; }
+#youAndUs .oneOfThree h2 span.line {
+	display: block;
+	float: left;
+	height: 1.8em;
+	border-bottom: 3px solid #b0a07c;
+}
+#youAndUs .oneOfThree h2 span.lineBlue {
+	border-bottom: 3px solid #0899d5;
+	height: 3px;
+}
+#youAndUs .oneOfThree h2 span.title {
+	float: left;
+	width: 72%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2.2em;
+}
+#youAndUs .regal h2 span.line { width: 22%; }
+#youAndUs .regal h2 span.title { width: 56%; }
+#youAndUs .invite h2 span.line { width: 22%; }
+#youAndUs .invite h2 span.title { width: 56%; }
+#youAndUs .invite h2.blueTitle span.line { width: 2%; }
+#youAndUs .invite h2.blueTitle span.title { width: 96%; }
+#youAndUs .voyage h2 span.line { width: 12%; }
+#youAndUs .voyage h2 span.title { width: 76%; }
+#youAndUs .voyage h2.blueTitle span.line { width: 4%; }
+#youAndUs .voyage h2.blueTitle span.title { width: 92%; }
+#youAndUs .oneOfThree img { margin: 30px auto; }
+#youAndUs .oneOfThree p {
+	text-align: justify;
+	font-size: 1em;
+	margin-top: 20px;
+	min-height: 80px;
+}
+#youAndUs .oneOfThree p.link {
+	text-align: right;
+	color: #0899d5;
+	margin: 24px 0 0;
+}
+#youAndUs .oneOfThree p.link a { color: #0899d5; }
+#youAndUs .oneOfThree p.link a:hover, #youAndUs .oneOfThree p.link a:focus { color: #c2a472; }
+
+/*========================*/
+/*======== Footer ========*/
+/*========================*/
+footer p {
+	text-align: center;
+	font-size: 1em;
+	padding: 30px 0;
+}
+footer p a { color: #0899d5; }
+footer p a:hover, footer p a:focus {
+	color: #c2a472;
+	text-decoration: underline;
+}
+footer p a.author { color: #c2a472; }
+footer p a.author:hover, footer p a.author:focus { text-decoration: underline; }
+
+/*==========================*/
+/*======== Mentions ========*/
+/*==========================*/
+#mentions {
+	width: 56%;
+	margin: 30px auto;
+	padding: 0 20%;
+}
+#mentions h2 {
+	font-size: 2em;
+	text-align: center;
+}
+#mentions h3 {
+	font-size: 1.6em;
+	margin: 30px 0 10px;
+}
+#mentions p { font-size: 1.2em; }
+#mentions p a { color: #0899d5; }
+#mentions p a:hover, #mentions p a:focus {
+	color: #c2a472;
+	text-decoration: underline;
 }

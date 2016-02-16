@@ -5,72 +5,38 @@
 		<title>Buena Onda</title>
 		
 		<!-- METAS -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-title" content="Buena Onda" />
 		<meta charset="utf-8" />
 		<meta name="description" content="" />
-		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png" />
-		<meta name="msapplication-square70x70logo" content="img/favicon/mstile-70x70.png" />
-		<meta name="msapplication-square144x144logo" content="img/favicon/mstile-144x144.png" />
-		<meta name="msapplication-square150x150logo" content="img/favicon/mstile-150x150.png" />
-		<meta name="msapplication-square310x310logo" content="img/favicon/mstile-310x310.png" />
-		<meta name="msapplication-wide310x150logo" content="img/favicon/mstile-310x150.png" />	
+		<meta name="theme-color" content="#ffffff ">	
 		
 		<!-- FAVICON -->
-		<link rel="shortcut icon" href="img/favicon/favicon.ico" />
 		<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png" />
-		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png" />
-		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png" />
-		<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png" />
 		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png" />
-		<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png" />
 		<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png" />
 		<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png" />
-		<link rel="icon" type="image/png" href="img/favicon/favicon-196x196.png" sizes="196x196" />
-		<link rel="icon" type="image/png" href="img/favicon/favicon-160x160.png" sizes="160x160" />
-		<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png" />
 		<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192" />
+		<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
 		<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
+		<link rel="manifest" href="img/favicon/manifest.json" />
+		<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#00aeef" />
 		
 		<!-- STYLES -->
 		<link rel="stylesheet" media="screen" type="text/css" href="css/resetCSS.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" media="screen" type="text/css" href="css/camera.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
-        <link rel='stylesheet' id='camera-css' media='all' type='text/css' href='css/camera.css'>
-        
-        
-        
-        <!-- JS -->
-        
-        <script type='text/javascript' src='js/jquery.min.js'></script>
-        <script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
-        <script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
-        <script type='text/javascript' src='js/camera.js'></script> 
-
-        <script>
-            jQuery(function(){
-
-                jQuery('#camera_wrap_1').camera({
-                    thumbnails: true
-                });
-
-                jQuery('#camera_wrap_2').camera({
-                    height: '400px',
-                    loader: 'bar',
-                    pagination: false,
-                    thumbnails: true
-                });
-            });
-        </script>
-        
-        
-        
-		<!--[if IE]>
-			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
 	</head>
 
 <body>
@@ -109,76 +75,104 @@
 	</div>
 </div>
 <![endif]-->
-
-	<header>
-		<h1 id="logo">BUENA<span>ONDA</span></h1>
-		<h2>L'empanada dans tous ses états!</h2>
-	</header>
 	
 	<?php
 		$page = "home";
-		include('includes/menu.php');
+		include('includes/header.php');
 	?>
 	
-	<section id="body">
-		<h1>Accueil</h1>
-	</section>
-	
-    
-    
-    <!-- MON AJOUT -->
-     <section id="slider">
-        
+    <!-- Slider -->
+    <section id="slider">
         <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
-            <div data-src="img/slider/slides/slide-1.jpg">
-                <!--<div class="camera_caption fadeFromBottom">
-                    Soit on peut laisser les textes dans l'image mais on peut aussi en mettre là c'est sympa non ?</em>
-                </div>-->
-            </div>
-            <div data-src="img/slider/slides/slide-1.jpg">
-            </div>
-            <div data-src="img/slider/slides/slide-1.jpg">
-            </div>
+            <div data-src="img/slider/slide-1.jpg"></div>
+            <div data-src="img/slider/slide-2.jpg"></div>
+            <div data-src="img/slider/slide-3.jpg"></div>
         </div>
-        
+        <div class="clear"></div>
     </section>
     
+    <section id="youAndUs">
+	    
+	    <div class="oneOfThree regal">
+		    <h2>
+			    <span class="line"></span>
+			    <span class="title">Régalez-vous</span>
+			    <span class="line"></span>
+			</h2>
+			<img src="img/home/home-vignette-regale.jpg" alt="Régalez-vous chez Buena Onda" width="100%" />
+			<h2 class="blueTitle">
+			    <span class="line lineBlue"></span>
+			    <span class="title">Notre carte</span>
+			    <span class="line lineBlue"></span>
+			    <div class="clear"></div>
+			</h2>
+			<p>
+				Lors de périples argentins, nous avons découvert des spécialités gourmandes, pétries des influences espagnoles et italiennes, 
+				pratiques à emporter et délicieuses à déguster.
+			</p>
+			<p class="link"><a href="carte.php">Pour un avant goût, c’est par ici...</a></p>
+	    </div>
+	    
+	    <div class="oneOfThree invite">
+		    <h2>
+			    <span class="line"></span>
+			    <span class="title">Invitez-vous</span>
+			    <span class="line"></span>
+			</h2>
+			<img src="img/home/home-vignette-invite.jpg" alt="Invitez-vous chez Buena Onda" width="100%" />
+			<h2 class="blueTitle">
+			    <span class="line lineBlue"></span>
+			    <span class="title">Sur place ou à emporter</span>
+			    <span class="line lineBlue"></span>
+			    <div class="clear"></div>
+			</h2>
+			<p>
+				Notre cuisine fraiche et faite maison peut se déguster sur place ou à l’extérieur ! Nous mettons à votre disposition tout le 
+				nécessaire pour vos commandes à emporter.
+			</p>
+			<p class="link"><a href="commande-reserve.php">Pour organiser votre prochain repas, c’est par là... </a></p>
+	    </div>
+	    
+	    <div class="oneOfThree voyage">
+		    <h2>
+			    <span class="line"></span>
+			    <span class="title">Voyagez avec nous</span>
+			    <span class="line"></span>
+			</h2>
+			<img src="img/home/home-vignette-voyage.jpg" alt="Voyagez avec Buena Onda" width="100%" />
+			<h2 class="blueTitle">
+			    <span class="line lineBlue"></span>
+			    <span class="title">Bueno, Bonito & barato</span>
+			    <span class="line lineBlue"></span>
+			    <div class="clear"></div>
+			</h2>
+			<p>
+				Bon, Beau et Bon marché». Nous faisons nôtre cette devise typiquement Argentine en vous accueillant chez Buena Onda. 
+			</p>
+			<p class="link"><a href="https://www.facebook.com/BUENA-ONDA-396951310405054/timeline" target="_blank">Pour suivre notre actualité, suivez nous sur Facebook...</a></p>
+	    </div>
+	    
+	    <div class="clear"></div>
+	    
+    </section>
     
+    <div class="clear"></div>
     
-    
-    
-	<footer>
-		
-	</footer>
+	<?php include('includes/footer.php'); ?>
 
 <!-- JAVASCRIPTS -->
-<!-- Menu -->
-<script type="text/javascript" src="js/classie.js"></script>
+<!-- Slider -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
+<script type="text/javascript" src="js/camera.js"></script>
 <script type="text/javascript">
-	(function() {
-		[].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
-			var menuItems = menu.querySelectorAll('.menu__link'),
-				setCurrent = function(ev) {
-					ev.preventDefault();
-	
-					var item = ev.target.parentNode; // li
-	
-					// return if already current
-					if (classie.has(item, 'menu__item--current')) {
-						return false;
-					}
-					// remove current
-					classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
-					// set current
-					classie.add(item, 'menu__item--current');
-				};
-	
-			[].slice.call(menuItems).forEach(function(el) {
-				el.addEventListener('click', setCurrent);
-			});
-		});
-	
-	})(window);
+    jQuery(function(){
+        jQuery('#camera_wrap_1').camera({
+            thumbnails: false,
+            height: '39%'
+        });
+    });
 </script>
 
 <!-- Simple Slide Menu -->

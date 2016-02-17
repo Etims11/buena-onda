@@ -15,7 +15,22 @@
 			<li class="menu__item<?php if($page == "carte"){echo " menu__item--current";} ?>"><a href="carte.php" class="menu__link"><span class="menu__helper">Carte</span></a></li>
 			<li class="menu__item<?php if($page == "comserve"){echo " menu__item--current";} ?>"><a href="commande-reserve.php" class="menu__link"><span class="menu__helper">Réserver</span></a></li>
 			<li class="menu__item<?php if($page == "comserve"){echo " menu__item--current";} ?>"><a href="commande-reserve.php" class="menu__link"><span class="menu__helper">Commander</span></a></li>
-			<li class="menu__item<?php if($page == "more"){echo " menu__item--current";} ?>"><a href="more-of-buenaonda.php" class="menu__link"><span class="menu__helper">BO c'est aussi</span></a></li>
+			<li class="menu__item<?php if($page == "more"){echo " menu__item--current";} ?>"><a href="more-of-buenaonda.php" class="menu__link"><span class="menu__helper">BO c'est aussi...</span></a></li>
 			<li class="menu__item<?php if($page == "contact"){echo " menu__item--current";} ?>"><a href="contact.php" class="menu__link"><span class="menu__helper">Contact</span></a></li>
 		</ul>
 	</nav>
+	
+	<div id="slide-menu">
+        <div id="contentIcon">
+            <div class="menu-trigger"></div>
+        </div>
+        <h1>Menu</h1>
+        <ul>
+            <li><a href="index.php" class="itemMenu">Accueil</a></li>
+            <li><a href="portfolio.php" class="itemMenu">Carte</a></li>
+            <li><a href="about.php" class="itemMenu">Réserver</a></li>
+            <li><a href="carnet.php" class="itemMenu">Commander</a></li>
+			<li><a href="tatouage.php" class="itemMenu">BO c'est aussi...</a></li>
+            <li><a href="contact.php" class="itemMenu">Contact</a></li>
+        </ul>
+    </div>

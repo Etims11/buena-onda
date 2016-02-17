@@ -84,9 +84,9 @@
     <!-- Slider -->
     <section id="slider">
         <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
-            <div data-src="img/slider/slide-1.jpg"></div>
-            <div data-src="img/slider/slide-2.jpg"></div>
-            <div data-src="img/slider/slide-3.jpg"></div>
+            <div id="img1" data-src="img/slider/slide-1.jpg"></div>
+            <div id="img2" data-src="img/slider/slide-2.jpg"></div>
+            <div id="img3" data-src="img/slider/slide-3.jpg"></div>
         </div>
         <div class="clear"></div>
     </section>
@@ -167,12 +167,24 @@
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
 <script type="text/javascript" src="js/camera.js"></script>
 <script type="text/javascript">
-    jQuery(function(){
-        jQuery('#camera_wrap_1').camera({
-            thumbnails: false,
-            height: '39%'
-        });
-    });
+    if (window.matchMedia("(min-width: 601px)").matches) {
+	    jQuery(function(){
+		    jQuery('#camera_wrap_1').camera({
+		        thumbnails: false,
+		        height: '39%'
+		    });
+		});
+    }else {
+	    jQuery(function(){
+		    jQuery('#camera_wrap_1').camera({
+		        thumbnails: false,
+		        height: '101.8%'
+		    });
+		});
+		$("#img1").attr('data-src', 'img/slider/slide-1-smart.jpg');
+		$("#img2").attr('data-src', 'img/slider/slide-2-smart.jpg');
+		$("#img3").attr('data-src', 'img/slider/slide-3-smart.jpg');
+    }
 </script>
 
 <!-- Simple Slide Menu -->

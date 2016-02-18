@@ -6,7 +6,7 @@
 	var defaults = {
 		alignment			: 'center', //topLeft, topCenter, topRight, centerLeft, center, centerRight, bottomLeft, bottomCenter, bottomRight
 		
-		autoAdvance			: false,	//true, false
+		autoAdvance			: true,	//true, false
 		
 		mobileAutoAdvance	: true, //true, false. Auto-advancing for mobile devices
 		

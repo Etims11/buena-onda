@@ -24,13 +24,18 @@
         <div id="contentIcon">
             <div class="menu-trigger"></div>
         </div>
-        <h1>Menu</h1>
+        <div id="logo">
+	        <img src="img/logo-smartphone.png" alt="Logo Buena Onda" />
+	        <h2>L'empanada dans tous ses états!</h2>
+        </div>
         <ul>
+	        <hr />
             <li><a href="index.php" class="itemMenu">Accueil</a></li>
-            <li><a href="portfolio.php" class="itemMenu">Carte</a></li>
-            <li><a href="about.php" class="itemMenu">Réserver</a></li>
-            <li><a href="carnet.php" class="itemMenu">Commander</a></li>
-			<li><a href="tatouage.php" class="itemMenu">BO c'est aussi...</a></li>
+            <li><a href="carte.php" class="itemMenu">Carte</a></li>
+            <li><a href="commande-reserve.php" class="itemMenu">Réserver</a></li>
+            <li><a href="commande-reserve.php" class="itemMenu">Commander</a></li>
+			<li><a href="more-of-buenaonda" class="itemMenu">BO c'est aussi...</a></li>
             <li><a href="contact.php" class="itemMenu">Contact</a></li>
+            <hr />
         </ul>
     </div>

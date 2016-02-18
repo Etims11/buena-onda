@@ -174,13 +174,13 @@ header h2 {
 		width: 246px;
 		height: 42px;
 		margin: 0 auto 30px;
+		z-index: 0;
 	}
 	#social a.icon {
 		float: left;
 		margin: 0 10px;
 	}
 }
-@media only screen and (max-width: 480px) { #social { top: 90px; } }
 
 /*======================*/
 /*======== Menu ========*/

@@ -401,7 +401,7 @@ nav a:hover, nav a:focus, nav a.active {
 /*========================*/
 footer p {
 	text-align: center;
-	font-size: 1em;
+	font-size: 0.9em;
 	padding: 30px 5%;
 }
 footer p a { color: #0899d5; }
@@ -411,3 +411,12 @@ footer p a:hover, footer p a:focus {
 }
 footer p a.author { color: #c2a472; }
 footer p a.author:hover, footer p a.author:focus { text-decoration: underline; }
+
+/* Responsive Smartphone */
+@media only screen and (max-width: 600px) {
+	footer p {
+    	text-align: right;
+    	padding: 30px 5% 30px 20%;
+	}
+}
+@media only screen and (max-width: 400px) { footer p { padding: 30px 5% 30px 26%; } }

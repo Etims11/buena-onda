@@ -96,19 +96,22 @@
 	#contentIcon {
 		position: fixed;
 		z-index: 12px;
-		bottom: 16px;
-		left: 16px;
-		width: 68px;
-		height: 68px;
-	}
+		bottom: 0;
+		left: 0;
+		width: 60px;
+		height: 60px;
+		padding: 15px 15px 10px 10px;
+		background: rgba(0, 0, 0, 0.5);
+		border-radius: 0 46px 0 0;
+		}
 	.menu-trigger {
 		position: relative;
 		float: left;
-		width: 68px;
-		height: 68px;
+		width: 60px;
+		height: 60px;
 		margin: 0;
 		background: url(../img/nav-icon.png) no-repeat;
-		background-size: 68px;
+		background-size: 60px;
 		cursor: pointer;
 		-moz-transition: all 300ms;
 		-webkit-transition: all 300ms;

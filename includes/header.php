@@ -11,7 +11,7 @@
 	
 	<nav class="cl-effect-17">
 		<a href="index.php" class="home<?php if($page == "home"){echo " active";} ?>" data-hover="Accueil">Accueil</a>
-		<a href="carte.php" class="carte<?php if($page == "carte"){echo " active";} ?>" data-hover="Carte">Carte</a>
+		<a href="carte-dejeuner.php" class="carte<?php if($page == "carte"){echo " active";} ?>" data-hover="Carte">Carte</a>
 		<a href="commande-reserve.php" class="commande<?php if($page == "comserve"){echo " active";} ?>" data-hover="Réserver">Réserver</a>
 		<a href="commande-reserve.php" class="reserve<?php if($page == "comserve"){echo " active";} ?>" data-hover="Commander">Commander</a>
 		<a href="more-of-buenaonda.php" class="boToo<?php if($page == "more"){echo " active";} ?>" data-hover="BO c'est aussi...">BO c'est aussi...</a>

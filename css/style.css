@@ -369,6 +369,28 @@ nav a:hover, nav a:focus, nav a.active {
 	}
 }
 
+/*=======================*/
+/*======== Carte ========*/
+/*=======================*/
+#linksCards {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+#linksCards a {
+	display: block;
+	float: left;
+	width: 43%;
+	height: 294px;
+	margin: 0;
+}
+#linksCards > img {
+	display: block;
+	float: left;
+	width: 10%;
+	margin: 100px 2% 0 2%;
+}
+
 /*==========================*/
 /*======== Mentions ========*/
 /*==========================*/

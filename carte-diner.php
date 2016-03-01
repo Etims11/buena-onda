@@ -2,7 +2,7 @@
 <html>
 	
 	<head>
-		<title>Buena Onda - Carte</title>
+		<title>Buena Onda - Carte Dîner</title>
 		
 		<!-- METAS -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -36,6 +36,7 @@
 		<link rel="stylesheet" media="screen" type="text/css" href="css/resetCSS.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
+		<link rel="stylesheet" media="screen" type="text/css" href="css/animsition.min.css" />
 	</head>
 
 <body>
@@ -81,12 +82,48 @@
 	?>
 	
 	<section id="body">
+		<a href="carte-dejeuner.php" class="animsition-link" data-animsition-out-class="fade-out-left" data-animsition-out-duration="1500">Menu Déjeuner</a>
+		<a href="carte-diner.php" class="animsition-link" data-animsition-out-class="fade-out-right" data-animsition-out-duration="1500">Menu Dîner</a>
 		
+		<div class="animsition" data-animsition-in-class="fade-in-right" data-animsition-in-duration="1500" data-animsition-out-class="fade-out-right" data-animsition-out-duration="800">
+			<h1 style="text-align:center;">DÎNER</h1>
+		</div>
 	</section>
 	
 	<?php include('includes/footer.php'); ?>
 
 <!-- JAVASCRIPTS -->
+<!-- jQuery -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- animsition.js -->
+<script type="text/javascript" src="js/animsition.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	  $(".animsition").animsition({
+	    inClass: 'fade-in-right',
+	    outClass: 'fade-out-right',
+	    inDuration: 1500,
+	    outDuration: 800,
+	    linkElement: '.animsition-link',
+	    // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
+	    loading: true,
+	    loadingParentElement: 'body', //animsition wrapper element
+	    loadingClass: 'animsition-loading',
+	    loadingInner: '', // e.g '<img src="loading.svg" />'
+	    timeout: false,
+	    timeoutCountdown: 5000,
+	    onLoadEvent: true,
+	    browser: [ 'animation-duration', '-webkit-animation-duration'],
+	    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+	    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+	    overlay : false,
+	    overlayClass : 'animsition-overlay-slide',
+	    overlayParentElement : 'body',
+	    transition: function(url){ window.location.href = url; }
+	  });
+	});
+</script>
+
 <!-- Simple Slide Menu -->
 <script type="text/javascript" src="js/menu.js"></script>
 

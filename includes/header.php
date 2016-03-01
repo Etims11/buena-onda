@@ -9,13 +9,31 @@
 		</div>
 	</header>
 	
-	<nav class="menu menu--adrian">
-		<ul class="menu__list">
-			<li class="menu__item<?php if($page == "home"){echo " menu__item--current";} ?>"><a href="index.php" class="menu__link"><span class="menu__helper">Accueil</span></a></li>
-			<li class="menu__item<?php if($page == "carte"){echo " menu__item--current";} ?>"><a href="carte.php" class="menu__link"><span class="menu__helper">Carte</span></a></li>
-			<li class="menu__item<?php if($page == "comserve"){echo " menu__item--current";} ?>"><a href="commande-reserve.php" class="menu__link"><span class="menu__helper">Réserver</span></a></li>
-			<li class="menu__item<?php if($page == "comserve"){echo " menu__item--current";} ?>"><a href="commande-reserve.php" class="menu__link"><span class="menu__helper">Commander</span></a></li>
-			<li class="menu__item<?php if($page == "more"){echo " menu__item--current";} ?>"><a href="more-of-buenaonda.php" class="menu__link"><span class="menu__helper">BO c'est aussi</span></a></li>
-			<li class="menu__item<?php if($page == "contact"){echo " menu__item--current";} ?>"><a href="contact.php" class="menu__link"><span class="menu__helper">Contact</span></a></li>
-		</ul>
+	<nav class="cl-effect-17">
+		<a href="index.php" class="home<?php if($page == "home"){echo " active";} ?>" data-hover="Accueil">Accueil</a>
+		<a href="carte.php" class="carte<?php if($page == "carte"){echo " active";} ?>" data-hover="Carte">Carte</a>
+		<a href="commande-reserve.php" class="commande<?php if($page == "comserve"){echo " active";} ?>" data-hover="Réserver">Réserver</a>
+		<a href="commande-reserve.php" class="reserve<?php if($page == "comserve"){echo " active";} ?>" data-hover="Commander">Commander</a>
+		<a href="more-of-buenaonda.php" class="boToo<?php if($page == "more"){echo " active";} ?>" data-hover="BO c'est aussi...">BO c'est aussi...</a>
+		<a href="contact.php" class="contact<?php if($page == "contact"){echo " active";} ?>" data-hover="Contact">Contact</a>
 	</nav>
+	
+	<div id="slide-menu">
+        <div id="contentIcon">
+            <div class="menu-trigger"></div>
+        </div>
+        <div id="logo">
+	        <img src="img/logo-smartphone.png" alt="Logo Buena Onda" />
+	        <h2>L'empanada dans tous ses états!</h2>
+        </div>
+        <ul>
+	        <hr />
+            <li><a href="index.php" class="itemMenu">Accueil</a></li>
+            <li><a href="carte.php" class="itemMenu">Carte</a></li>
+            <li><a href="commande-reserve.php" class="itemMenu">Réserver</a></li>
+            <li><a href="commande-reserve.php" class="itemMenu">Commander</a></li>
+			<li><a href="more-of-buenaonda" class="itemMenu">BO c'est aussi...</a></li>
+            <li><a href="contact.php" class="itemMenu">Contact</a></li>
+            <hr />
+        </ul>
+    </div>

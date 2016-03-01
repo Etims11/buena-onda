@@ -2,7 +2,7 @@
 <html>
 	
 	<head>
-		<title>Buena Onda</title>
+		<title>Buena Onda - Carte Déjeuner</title>
 		
 		<!-- METAS -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -35,8 +35,8 @@
 		<!-- STYLES -->
 		<link rel="stylesheet" media="screen" type="text/css" href="css/resetCSS.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" media="screen" type="text/css" href="css/camera.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
+		<link rel="stylesheet" media="screen" type="text/css" href="css/animsition.min.css" />
 	</head>
 
 <body>
@@ -77,114 +77,51 @@
 <![endif]-->
 	
 	<?php
-		$page = "home";
+		$page = "carte";
 		include('includes/header.php');
 	?>
 	
-    <!-- Slider -->
-    <section id="slider">
-        <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
-            <div id="img1" data-src="img/slider/slide-1.jpg"></div>
-            <div id="img2" data-src="img/slider/slide-2.jpg"></div>
-            <div id="img3" data-src="img/slider/slide-3.jpg"></div>
-        </div>
-        <div class="clear"></div>
-    </section>
-    
-    <section id="youAndUs">
-	    
-	    <div class="oneOfThree regal">
-		    <h2>
-			    <span class="line"></span>
-			    <span class="title">Régalez-vous</span>
-			    <span class="line"></span>
-			</h2>
-			<img src="img/home/home-vignette-regale.jpg" alt="Régalez-vous chez Buena Onda" width="100%" />
-			<h2 class="blueTitle">
-			    <span class="line lineBlue"></span>
-			    <span class="title">Notre carte</span>
-			    <span class="line lineBlue"></span>
-			    <div class="clear"></div>
-			</h2>
-			<p>
-				Lors de périples argentins, nous avons découvert des spécialités gourmandes, pétries des influences espagnoles et italiennes, 
-				pratiques à emporter et délicieuses à déguster.
-			</p>
-			<p class="link"><a href="carte.php">Pour un avant goût, c’est par ici...</a></p>
-	    </div>
-	    
-	    <div class="oneOfThree invite">
-		    <h2>
-			    <span class="line"></span>
-			    <span class="title">Invitez-vous</span>
-			    <span class="line"></span>
-			</h2>
-			<img src="img/home/home-vignette-invite.jpg" alt="Invitez-vous chez Buena Onda" width="100%" />
-			<h2 class="blueTitle">
-			    <span class="line lineBlue"></span>
-			    <span class="title">Sur place ou à emporter</span>
-			    <span class="line lineBlue"></span>
-			    <div class="clear"></div>
-			</h2>
-			<p>
-				Notre cuisine fraiche et faite maison peut se déguster sur place ou à l’extérieur ! Nous mettons à votre disposition tout le 
-				nécessaire pour vos commandes à emporter.
-			</p>
-			<p class="link"><a href="commande-reserve.php">Pour organiser votre prochain repas, c’est par là... </a></p>
-	    </div>
-	    
-	    <div class="oneOfThree voyage">
-		    <h2>
-			    <span class="line"></span>
-			    <span class="title">Voyagez avec nous</span>
-			    <span class="line"></span>
-			</h2>
-			<img src="img/home/home-vignette-voyage.jpg" alt="Voyagez avec Buena Onda" width="100%" />
-			<h2 class="blueTitle">
-			    <span class="line lineBlue"></span>
-			    <span class="title">Bueno, Bonito & barato</span>
-			    <span class="line lineBlue"></span>
-			    <div class="clear"></div>
-			</h2>
-			<p>
-				Bon, Beau et Bon marché». Nous faisons nôtre cette devise typiquement Argentine en vous accueillant chez Buena Onda. 
-			</p>
-			<p class="link"><a href="https://www.facebook.com/BUENA-ONDA-396951310405054/timeline" target="_blank">Pour suivre notre actualité, suivez nous sur Facebook...</a></p>
-	    </div>
-	    
-	    <div class="clear"></div>
-	    
-    </section>
-    
-    <div class="clear"></div>
-    
+	<section id="body">
+		<a href="carte-dejeuner.php" class="animsition-link" data-animsition-out-class="fade-out-left" data-animsition-out-duration="1500">Menu Déjeuner</a>
+		<a href="carte-diner.php" class="animsition-link" data-animsition-out-class="fade-out-right" data-animsition-out-duration="1500">Menu Dîner</a>
+		
+		<div class="animsition" data-animsition-in-class="fade-in-left" data-animsition-in-duration="1500" data-animsition-out-class="fade-out-left" data-animsition-out-duration="800">
+			<h1 style="text-align:center;">DÉJEUNER</h1>
+		</div>
+	</section>
+	
 	<?php include('includes/footer.php'); ?>
 
 <!-- JAVASCRIPTS -->
-<!-- Slider -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
-<script type="text/javascript" src="js/camera.js"></script>
+<!-- jQuery -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- animsition.js -->
+<script type="text/javascript" src="js/animsition.min.js"></script>
 <script type="text/javascript">
-    if (window.matchMedia("(min-width: 601px)").matches) {
-	    jQuery(function(){
-		    jQuery('#camera_wrap_1').camera({
-		        thumbnails: false,
-		        height: '39%'
-		    });
-		});
-    }else {
-	    jQuery(function(){
-		    jQuery('#camera_wrap_1').camera({
-		        thumbnails: false,
-		        height: '101.8%'
-		    });
-		});
-		$("#img1").attr('data-src', 'img/slider/slide-1-smart.jpg');
-		$("#img2").attr('data-src', 'img/slider/slide-2-smart.jpg');
-		$("#img3").attr('data-src', 'img/slider/slide-3-smart.jpg');
-    }
+	$(document).ready(function() {
+	  $(".animsition").animsition({
+	    inClass: 'fade-in-left',
+	    outClass: 'fade-out-left',
+	    inDuration: 1500,
+	    outDuration: 800,
+	    linkElement: '.animsition-link',
+	    // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
+	    loading: true,
+	    loadingParentElement: 'body', //animsition wrapper element
+	    loadingClass: 'animsition-loading',
+	    loadingInner: '', // e.g '<img src="loading.svg" />'
+	    timeout: false,
+	    timeoutCountdown: 5000,
+	    onLoadEvent: true,
+	    browser: [ 'animation-duration', '-webkit-animation-duration'],
+	    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+	    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+	    overlay : false,
+	    overlayClass : 'animsition-overlay-slide',
+	    overlayParentElement : 'body',
+	    transition: function(url){ window.location.href = url; }
+	  });
+	});
 </script>
 
 <!-- Simple Slide Menu -->

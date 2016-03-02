@@ -9,7 +9,7 @@ function redirige($url)
 <html>
 	
 	<head>
-		<title>Studio Pilates 16 - Contact</title>
+		<title>Buena Onda - Contact</title>
 		
 		<!-- METAS -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">

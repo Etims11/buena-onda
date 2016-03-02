@@ -178,7 +178,7 @@
 		elles s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).</p>
 	</section>
 	
-	<?php include('includes/footer.php'); ?>
+	<?php include('includes/footer.html'); ?>
 
 <!-- JAVASCRIPTS -->
 <!-- Simple Slide Menu -->

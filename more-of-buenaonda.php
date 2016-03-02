@@ -84,7 +84,7 @@
 		
 	</section>
 	
-	<?php include('includes/footer.php'); ?>
+	<?php include('includes/footer.html'); ?>
 
 <!-- JAVASCRIPTS -->
 <!-- Simple Slide Menu -->

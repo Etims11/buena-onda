@@ -1,3 +1,9 @@
 /*==========================*/
 /*======== Commande ========*/
 /*==========================*/
+ul#card-content {
+	text-align: center;
+}
+ul#card-content li {
+	cursor: pointer;
+}

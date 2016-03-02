@@ -83,13 +83,145 @@
 	
 	<section id="body">
 		
-		
+		<ul id="card-content">
+			<li class="see-more" data-content-id="empanada">FORMULES EMPANADAS</li>
+			<p id="empanada" class="content-toggle">
+				Chico
+				2 empanadas, salade, boisson, dessert
+				11,50 €<br />
+				Chango
+				3 empanadas, salade, boisson, dessert
+				13,50 €<br />
+				Gaucho
+				4 empanadas, salade, boisson, dessert
+				15,50 €<br />
+				Degustación (2 personnes)
+				Nos 8 empanadas différentes, salades, 2 boissons, 2 desserts
+				34,00 €
+			</p>
+			<li class="see-more" data-content-id="salade">FORMULE SALADE</li>
+			<p id="salade" class="content-toggle">
+				Formule Salade
+				Salade composée autour du quinoa, boisson, dessert
+				13,50 €
+			</p>
+			<li class="see-more" data-content-id="empanalade">EMPANADAS & SALADES</li>
+			<p id="empanalade" class="content-toggle">
+				Nos empanadas sont préparées quotidiennement dans nos cuisines, à base de produits frais. Nos viandes sont d'origine française excepté le chorizo argentin<br /><br />
+				Bœuf
+				Boeuf haché maison, oignons, épices argentines, oeuf, olives
+				3,50 €<br />
+				Thon
+				Thon, oignons, tomates, mimosa d'œuf dur, olives
+				3,50 €<br />
+				Veau
+				Sauté de veau haché maison, coriandre, tomates, citrons confis, ail
+				3,50 €<br />
+				Jambon & Fromage
+				Jambon blanc, emmental, mozzarella
+				3,50 €<br />
+				Légumes
+				Poivrons, oignons, tomates, confis dans du velouté de balsamique
+				3,50 €<br />
+				Épinards & Ricotta
+				Épinards, ricotta, mozzarella, muscade
+				3,50 €<br />
+				Choriempa
+				Chorizo argentin grillé
+				4,50 €<br />
+				Empanada Du Moment
+				Boeuf haché, bacon, cheddar, oignons rouges, pickles, sauce moutarde, ketchup
+				3,50 €<br />
+				Salade Quinoa Mozzarella Di Buffala
+				9,50 €<br />
+				Salade Quinoa Poulet Mariné Au Chimichuri
+				9,50 €<br />
+				Soupe Du Moment Maison
+				4,00 €
+			</p>
+			<li class="see-more" data-content-id="dessert">DESSERTS</li>
+			<p id="dessert" class="content-toggle">
+				Cookie
+				3,50 €<br />
+				Fromage Blanc Au Dulce De Leche
+				4,50 €<br />
+				Compote De Pommes Au Spéculoos
+				4,50 €<br />
+				Crème Au Dulce De Leche
+				6,00 €<br />
+				Pâtisserie
+				6,00 €
+			</p>
+			<li class="see-more" data-content-id="soft">SOFTS</li>
+			<p id="soft" class="content-toggle">
+				Coca 33cl
+				2,50 €<br />
+				Coca Zéro 33cl
+				2,50 €<br />
+				Ice Tea Pêche 33cl
+				2,50 €<br />
+				Minute Maid Pomme 33cl
+				2,50 €<br />
+				Seven Up 33cl
+				2,50 €<br />
+				Orangina 33cl
+				2,50 €<br />
+				Eau Gazeuse 33cl
+				2,50 €<br />
+				Eau Minérale 50cl
+				2,50 €<br />
+				Gota Plate 50cl
+				Eau argentine
+				4,50 €<br />
+				Gota pétillante 50cl
+				Eau argentine
+				5,00 €
+			</p>
+			<li class="see-more" data-content-id="beer">BIÈRE</li>
+			<p id="beer" class="content-toggle">
+				Quilmes 34cl
+				Bière argentine
+				5,00 €
+			</p>
+			<li class="see-more" data-content-id="wine">VINS</li>
+			<p id="wine" class="content-toggle">
+				Trapiche Chardonnay - Vin Blanc
+				18,00 €<br />
+				Alta Cumbres Torrontes - Vin Blanc
+				22,00 €<br />
+				Nieto Senetiner Malbec - Vin Rouge
+				18,00 €<br />
+				Alta Cumbres Cabernet - Vin Blanc
+				22,00 €<br />
+				Rutini Cabernet & Malbec - Vin Rouge
+				26,00 €<br />
+				Piedra Negra Rosado Pinot Gris - Vin Rosé
+				18,00 €
+			</p>
+		</ul>	
 		
 	</section>
 	
 	<?php include('includes/footer.html'); ?>
 
 <!-- JAVASCRIPTS -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.content-toggle').slideToggle();
+	    $('.see-more').click(function(){
+	        //var container = $(this);
+	        $('#'+$(this)[0].getAttribute('data-content-id')).slideToggle(function() {
+	            if($(this).is(":visible")) {
+	                //container.css('padding', '40px 3.3% 50px');
+	            }else{
+	                //container.css('padding', '40px 3.3%');
+	            }        
+	        });     
+	    });
+	});
+</script>
+
 <!-- Simple Slide Menu -->
 <script type="text/javascript" src="js/menu.js"></script>
 

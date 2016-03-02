@@ -81,15 +81,99 @@
 		include('includes/header.php');
 	?>
 	
+    
+    
 	<section id="body">
 		
 		<?php include('includes/links-cards.php'); ?>
 		
 		<div class="animsition" data-animsition-in-class="fade-in-right" data-animsition-in-duration="1500" data-animsition-out-class="fade-out-right" data-animsition-out-duration="800">
 			
-			<div id="title-card">
-				
-			</div>
+			
+            
+            <section id="carte">
+           
+
+            <div id="title-card"> 
+                <h2 id="high-title">POUR LE DÎNER</h2>
+                <h3 id="medium-title">C’est  Buena Onda Batignolles</h3>
+                <p>Sur place et à emporter du lundi soir au samedi soir de 18h30 à minuit</p>
+            </div>
+           
+           <!-- Bloc title menu -->
+           <div id="title-menu">
+                <div class="blue-border">&nbsp;</div> 
+                LE MENU 
+                <div class="blue-border">&nbsp;</div>
+           </div>
+           
+           <!-- Bloc principal du menu -->
+           <div id="bloc-menu">
+               <div id="bloc-menu-left">
+                   <ul>
+                       <li>
+
+                       </li>
+
+                       <li>
+
+                       </li>
+
+                       <li>
+
+                       </li>
+
+                       <li>
+
+                       </li>
+                   </ul>
+               </div>
+
+                <div id="bloc-menu-right">
+                   <ul>
+                       <li>
+
+                       </li>
+
+                       <li>
+
+                       </li>
+
+                       <li>
+
+                       </li>
+
+                       <li>
+
+                       </li>
+                   </ul>
+               </div>
+           </div>
+           
+            <!-- 2 Blocs situation -->
+           <div id="bloc-situation">
+               <div id="bloc-border-adress">
+                    <div id="bloc-adress">
+                        BUENA ONDA BATIGNOLLES
+                        Dîner : du lundi au samedi
+                        Déjeuner & Dîner : samedi
+
+                        75, rue Legendre - 75017 Paris 
+                        01 45 89 20 90
+                        buenaonda75017@gmail.com
+                    </div>
+               </div>
+
+               <div id="bloc-white-arrow"> &nbsp;</div>
+               
+               <div id="bloc-border-map">
+                   <div id="bloc-map">
+                        <img src="img/cartes/map.jpg" alt="Map Buena Onda" />
+                   </div>
+               </div>
+           </div>
+
+        </section>
 			
 		</div>
 		

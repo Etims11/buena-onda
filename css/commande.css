@@ -7,18 +7,19 @@
 	margin: 0 auto;
 }
 ul#card-content {
-	width: 50%;
+	width: 75%;
 	float: left;
+	font-size: 1.1em;
 }
 ul#card-content li {
 	cursor: pointer;
 	color: #049ede;
 	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: bold;
 	margin-bottom: 10px;
 }
-.content-toggle {
-	margin-bottom: 20px;
-}
+.content-toggle { margin-bottom: 20px; }
 .content-toggle p {
 	margin-bottom: 10px;
 	color: #049ede;
@@ -32,10 +33,18 @@ ul#card-content li {
 	clear: both;
 	color: #049ede;
 }
-.content-toggle span.noTitle {
-	clear: right;
-}
+.content-toggle span.noTitle { clear: right; }
+.content-toggle span.clearLeft { clear: left; }
 .content-toggle span.prix {
 	float: right;
 	background: rgba(255, 255, 255, 0.1);
+}
+.content-toggle select.numberOf, .content-toggle img.bag { float: right; }
+.white-popup {
+	position: relative;
+	background: #fff;
+	padding: 20px;
+	width:auto;
+	max-width: 500px;
+	margin: 20px auto;
 }

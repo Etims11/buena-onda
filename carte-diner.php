@@ -37,6 +37,7 @@
 		<link rel="stylesheet" media="screen" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/animsition.min.css" />
+        <link rel="stylesheet" media="screen" type="text/css" href="css/cartes.css" />
 	</head>
 
 <body>
@@ -112,19 +113,50 @@
                <div id="bloc-menu-left">
                    <ul>
                        <li>
+                           EMPANADAS
+                        Le symbole même de la street food argentine. Petit chausson garni plus ou moins épicé.
+
+                            Bœuf viande hachée maison, oignons, épices argentines. 
+                            Thon thon, oignons, tomates, mimosa d’œuf dur, olives
+                            Veau sauté de veau haché maison, coriandre, tomates, citron, ail
+                            Burger boeuf hâché, sauce moutarde miel, pickles, cheddar, oignons rouge ketchup
+                            Jambon & Fromage jambon blanc, emmental, mozzarella
+                            Légumes poivrons, oignons, tomates, velouté de balsamique
+                            Epinards & Ricotta épinards, ricotta, mozzarella
+                            Choriempa chorizo argentin grillé (+1,00 €)
+                            Empanada du moment
+                        Les empanadas sont préparées quotidiennement dans nos cuisines à partir de produits frais. 
+                        Viandes d’origine française excepté le chorizo argentin.
+                           
+                           1 à 11 empanadas 3,50€/pièce
+                           À partir de 12 empanadas (commandées en une fois) 3,00€
+                       </li>
+
+                       <li>
+                           ACCOMPAGNEMENTS
+                             Salade 3,00€
 
                        </li>
 
                        <li>
+                           DESSERTS
+                            Cookie 3,50 €
+                            Fromage blanc au dulce de leche 4,50 € 
+                            Compote de pommes au Spéculoos© 4,50 €
+                            Pâtisserie 6,00 €
+                            Crème au dulce de leche 6,00 €
+
 
                        </li>
 
                        <li>
-
-                       </li>
-
-                       <li>
-
+                           BOISSONS
+                            Soda 33cl 4,00 €
+                            Gota plate (eau argentine) 50cl 4,50 €
+                            Gota pétillante (eau argentine) 50cl 5,00 €
+                            Café Nespresso® 3,00 €
+                            Thé Kusmi® 4,00 €
+                            Maté 4,00 €
                        </li>
                    </ul>
                </div>
@@ -132,19 +164,106 @@
                 <div id="bloc-menu-right">
                    <ul>
                        <li>
+                           Blancs
+                            Trapiche Chardonnay
+                            Terra de Luna Chardonnay & Torrontes 
+                            Etchart Torrontes
+                            Altas Cumbres Torrontes
+                            Broquel Torrontes
+                            Atamisque Chardonnay
+                           
+                           Rouges
+                            San Felipe Malbec
+                            Nieto Senetiner Merlot 
+                            Nieto Senetiner Malbec 
+                            Chuckker Malbec
+                            Piedra Negra Malbec 
+                            Trapiche Oak Cast Malbec 
+                            Altas Cumbres Malbec 
+                            Altas Cumbres Cabernet 
+                            Broquel Malbec
+                            Rutini Cabernet & Malbec 
+                            Atamisque Malbec
+                           
+                           Rosé
+                            Piedra Negra rosado Pinot Gris
+                           
+                           Alcool
+                            Quilmes (Bière argentine) 34 cl 
+                            Legui
+                            Rum
+                            Fernet Branca
 
                        </li>
 
                        <li>
+                           BUENAONDA TRAITEUR
+                            1 à 6 empanadas
+                            7 à 11 empanadas
+                            À partir de 12 empanadas
+                            Épicérie et Vins argentins à emporter, nous consulter.
 
                        </li>
-
+                       
                        <li>
+                            5,00 €
+                            5,00 € 
+                            5,50 € 
+                            6,00 € 
+                            6,50 €
+                            -
 
+                            4,50 € 
+                            4,50 € 
+                            5,00 € 
+                            5,00 € 
+                            5,00 € 
+                            5,50 € 
+                            5,50 € 
+                            6,00 € 
+                            6,50 € 
+                            7,00 € 
+                            8,00 €
+
+                            5,00 €
+
+                            5,00 € 
+                            5,00 € 
+                            7,00 € 
+                            8,00 €
                        </li>
-
+                       
                        <li>
+                            24,00 € 
+                            26,00 € 
+                            28,00 € 
+                            31,00 € 
+                            33,00 € 
+                            37,00 € 
 
+                            23,00 € 
+                            23,00 € 
+                            27,00 € 
+                            27,00 € 
+                            27,00 € 
+                            30,00 € 
+                            30,00 € 
+                            32,00 € 
+                            36,00 € 
+                            39,00 € 
+                            44,00 €
+
+                            25,00 €
+
+                            -
+                            38,00 € 
+                            45,00 € 
+                            45,00 €
+                       
+                           
+                            3,20 €/pièce
+                            3,00 €
+                            2,80 € 
                        </li>
                    </ul>
                </div>

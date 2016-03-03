@@ -1,0 +1,47 @@
+/*========================*/
+/*======== Cartes ========*/
+/*========================*/
+#linksCards {
+	width: 100%;
+	max-width: 1060px;
+	margin: 0 auto;
+}
+#linksCards a {
+	display: block;
+	float: left;
+	width: 43%;
+	height: 240px;
+	margin: 0;
+	font-family: 'VAG Rounded Bold';
+	font-size: 1.6em;
+	text-transform: uppercase;
+	color: #00a0e0;
+	transition: 0.3s;
+}
+#linksCards a:hover, #linksCards a:focus, #linksCards a.active { color: #fff; }
+#linksCards > img {
+	display: block;
+	float: left;
+	width: 10%;
+	margin: 100px 2% 0 2%;
+}
+#linksCards a span {
+	position: relative;
+	top: -106px;
+}
+#linksCards a span#title-link-dej {
+	float: right;
+	margin-right: 13%;
+}
+#linksCards a span#title-link-diner {
+	float: left;
+	margin-left: 13%;
+}
+#title-card {
+	width: 100%;
+	max-width: 1060px;
+	height: 228px;
+	background: url(../img/carte/background-title-card.png) no-repeat center top;
+	background-size: contain;
+	margin: 36px auto;
+}

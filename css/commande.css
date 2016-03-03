@@ -1,9 +1,41 @@
 /*==========================*/
 /*======== Commande ========*/
 /*==========================*/
+#body {
+	width: 96%;
+	max-width: 1060px;
+	margin: 0 auto;
+}
 ul#card-content {
-	text-align: center;
+	width: 50%;
+	float: left;
 }
 ul#card-content li {
 	cursor: pointer;
+	color: #049ede;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.content-toggle {
+	margin-bottom: 20px;
+}
+.content-toggle p {
+	margin-bottom: 10px;
+	color: #049ede;
+}
+.content-toggle span.title, .content-toggle span.description , .content-toggle span.prix {
+	display: block;
+	float: left;
+	margin-right: 2%;
+}
+.content-toggle span.title {
+	clear: both;
+	color: #049ede;
+}
+.content-toggle span.noTitle {
+	clear: right;
+}
+.content-toggle span.prix {
+	float: right;
+	background: rgba(255, 255, 255, 0.1);
 }

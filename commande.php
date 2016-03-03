@@ -85,120 +85,135 @@
 		
 		<ul id="card-content">
 			<li class="see-more" data-content-id="empanada">FORMULES EMPANADAS</li>
-			<p id="empanada" class="content-toggle">
-				Chico
-				2 empanadas, salade, boisson, dessert
-				11,50 €<br />
-				Chango
-				3 empanadas, salade, boisson, dessert
-				13,50 €<br />
-				Gaucho
-				4 empanadas, salade, boisson, dessert
-				15,50 €<br />
-				Degustación (2 personnes)
-				Nos 8 empanadas différentes, salades, 2 boissons, 2 desserts
-				34,00 €
-			</p>
+			<div id="empanada" class="content-toggle">
+				<span class="title">Chico</span>
+				<span class="description">2 empanadas, salade, boisson, dessert</span>
+				<span class="prix">11,50 €</span>
+				<span class="title">Chango</span>
+				<span class="description">3 empanadas, salade, boisson, dessert</span>
+				<span class="prix">13,50 €</span>
+				<span class="title">Gaucho</span>
+				<span class="description">4 empanadas, salade, boisson, dessert</span>
+				<span class="prix">15,50 €</span>
+				<span class="title">Degustación (2 personnes)</span>
+				<span class="description">Nos 8 empanadas différentes, salades, 2 boissons, 2 desserts</span>
+				<span class="prix">34,00 €</span>
+				<div class="clear"></div>
+			</div>
+			
 			<li class="see-more" data-content-id="salade">FORMULE SALADE</li>
-			<p id="salade" class="content-toggle">
-				Formule Salade
-				Salade composée autour du quinoa, boisson, dessert
-				13,50 €
-			</p>
+			<div id="salade" class="content-toggle">
+				<span class="title">Formule Salade</span>
+				<span class="description">Salade composée autour du quinoa, boisson, dessert</span>
+				<span class="prix">13,50 €</span>
+				<div class="clear"></div>
+			</div>
+			
 			<li class="see-more" data-content-id="empanalade">EMPANADAS & SALADES</li>
-			<p id="empanalade" class="content-toggle">
-				Nos empanadas sont préparées quotidiennement dans nos cuisines, à base de produits frais. Nos viandes sont d'origine française excepté le chorizo argentin<br /><br />
-				Bœuf
-				Boeuf haché maison, oignons, épices argentines, oeuf, olives
-				3,50 €<br />
-				Thon
-				Thon, oignons, tomates, mimosa d'œuf dur, olives
-				3,50 €<br />
-				Veau
-				Sauté de veau haché maison, coriandre, tomates, citrons confis, ail
-				3,50 €<br />
-				Jambon & Fromage
-				Jambon blanc, emmental, mozzarella
-				3,50 €<br />
-				Légumes
-				Poivrons, oignons, tomates, confis dans du velouté de balsamique
-				3,50 €<br />
-				Épinards & Ricotta
-				Épinards, ricotta, mozzarella, muscade
-				3,50 €<br />
-				Choriempa
-				Chorizo argentin grillé
-				4,50 €<br />
-				Empanada Du Moment
-				Boeuf haché, bacon, cheddar, oignons rouges, pickles, sauce moutarde, ketchup
-				3,50 €<br />
-				Salade Quinoa Mozzarella Di Buffala
-				9,50 €<br />
-				Salade Quinoa Poulet Mariné Au Chimichuri
-				9,50 €<br />
-				Soupe Du Moment Maison
-				4,00 €
-			</p>
+			<div id="empanalade" class="content-toggle">
+				<p >
+					Nos empanadas sont préparées quotidiennement dans nos cuisines, à base de produits frais. 
+					Nos viandes sont d'origine française excepté le chorizo argentin.
+				</p>
+				<span class="title">B&oelig;uf</span>
+				<span class="description">B&oelig;uf haché maison, oignons, épices argentines, &oelig;uf, olives</span>
+				<span class="prix">3,50 €</span>
+				<span class="title">Thon</span>
+				<span class="description">Thon, oignons, tomates, mimosa d'œuf dur, olives</span>
+				<span class="prix">3,50 €</span>
+				<span class="title">Veau</span>
+				<span class="description">Sauté de veau haché maison, coriandre, tomates, citrons confis, ail</span>
+				<span class="prix">3,50 €</span>
+				<span class="title">Jambon & Fromage</span>
+				<span class="description">Jambon blanc, emmental, mozzarella</span>
+				<span class="prix">3,50 €</span>
+				<span class="title">Légumes</span>
+				<span class="description">Poivrons, oignons, tomates, confis dans du velouté de balsamique</span>
+				<span class="prix">3,50 €</span>
+				<span class="title">Épinards & Ricotta</span>
+				<span class="description">Épinards, ricotta, mozzarella, muscade</span>
+				<span class="prix">3,50 €</span>
+				<span class="title">Choriempa</span>
+				<span class="description">Chorizo argentin grillé</span>
+				<span class="prix">4,50 €</span>
+				<span class="title">Empanada Du Moment</span>
+				<span class="description">B&oelig;uf haché, bacon, cheddar, oignons rouges, pickles, sauce moutarde, ketchup</span>
+				<span class="prix">3,50 €</span>
+				<span class="description noTitle">Salade Quinoa Mozzarella Di Buffala</span>
+				<span class="prix">9,50 €</span>
+				<span class="description noTitle">Salade Quinoa Poulet Mariné Au Chimichuri</span>
+				<span class="prix">9,50 €</span>
+				<span class="description noTitle">Soupe Du Moment Maison</span>
+				<span class="prix">4,00 €</span>
+				<div class="clear"></div>
+			</div>
+			
 			<li class="see-more" data-content-id="dessert">DESSERTS</li>
-			<p id="dessert" class="content-toggle">
-				Cookie
-				3,50 €<br />
-				Fromage Blanc Au Dulce De Leche
-				4,50 €<br />
-				Compote De Pommes Au Spéculoos
-				4,50 €<br />
-				Crème Au Dulce De Leche
-				6,00 €<br />
-				Pâtisserie
-				6,00 €
-			</p>
+			<div id="dessert" class="content-toggle">
+				<span class="description noTitle">Cookie</span>
+				<span class="prix">3,50 €</span>
+				<span class="description noTitle">Fromage Blanc Au Dulce De Leche</span>
+				<span class="prix">4,50 €</span>
+				<span class="description noTitle">Compote De Pommes Au Spéculoos</span>
+				<span class="prix">4,50 €</span>
+				<span class="description noTitle">Crème Au Dulce De Leche</span>
+				<span class="prix">6,00 €</span>
+				<span class="description noTitle">Pâtisserie</span>
+				<span class="prix">6,00 €</span>
+				<div class="clear"></div>
+			</div>
+			
 			<li class="see-more" data-content-id="soft">SOFTS</li>
-			<p id="soft" class="content-toggle">
-				Coca 33cl
-				2,50 €<br />
-				Coca Zéro 33cl
-				2,50 €<br />
-				Ice Tea Pêche 33cl
-				2,50 €<br />
-				Minute Maid Pomme 33cl
-				2,50 €<br />
-				Seven Up 33cl
-				2,50 €<br />
-				Orangina 33cl
-				2,50 €<br />
-				Eau Gazeuse 33cl
-				2,50 €<br />
-				Eau Minérale 50cl
-				2,50 €<br />
-				Gota Plate 50cl
-				Eau argentine
-				4,50 €<br />
-				Gota pétillante 50cl
-				Eau argentine
-				5,00 €
-			</p>
+			<div id="soft" class="content-toggle">
+				<span class="description noTitle">Coca 33cl</span>
+				<span class="prix">2,50 €</span>
+				<span class="description noTitle">Coca Zéro 33cl</span>
+				<span class="prix">2,50 €</span>
+				<span class="description noTitle">Ice Tea Pêche 33cl</span>
+				<span class="prix">2,50 €</span>
+				<span class="description noTitle">Minute Maid Pomme 33cl</span>
+				<span class="prix">2,50 €</span>
+				<span class="description noTitle">Seven Up 33cl</span>
+				<span class="prix">2,50 €</span>
+				<span class="description noTitle">Orangina 33cl</span>
+				<span class="prix">2,50 €</span>
+				<span class="description noTitle">Eau Gazeuse 33cl</span>
+				<span class="prix">2,50 €</span>
+				<span class="description noTitle">Eau Minérale 50cl</span>
+				<span class="prix">2,50 €</span>
+				<span class="description noTitle">Gota Plate 50cl, Eau argentine</span>
+				<span class="prix">4,50 €</span>
+				<span class="description noTitle">Gota pétillante 50cl, Eau argentine</span>
+				<span class="prix">5,00 €</span>
+				<div class="clear"></div>
+			</div>
+			
 			<li class="see-more" data-content-id="beer">BIÈRE</li>
-			<p id="beer" class="content-toggle">
-				Quilmes 34cl
-				Bière argentine
-				5,00 €
-			</p>
+			<div id="beer" class="content-toggle">
+				<span class="description noTitle">Quilmes 34cl, Bière argentine</span>
+				<span class="prix">5,00 €</span>
+				<div class="clear"></div>
+			</div>
+			
 			<li class="see-more" data-content-id="wine">VINS</li>
-			<p id="wine" class="content-toggle">
-				Trapiche Chardonnay - Vin Blanc
-				18,00 €<br />
-				Alta Cumbres Torrontes - Vin Blanc
-				22,00 €<br />
-				Nieto Senetiner Malbec - Vin Rouge
-				18,00 €<br />
-				Alta Cumbres Cabernet - Vin Blanc
-				22,00 €<br />
-				Rutini Cabernet & Malbec - Vin Rouge
-				26,00 €<br />
-				Piedra Negra Rosado Pinot Gris - Vin Rosé
-				18,00 €
-			</p>
-		</ul>	
+			<div id="wine" class="content-toggle">
+				<span class="description noTitle">Trapiche Chardonnay - Vin Blanc</span>
+				<span class="prix">18,00 €</span>
+				<span class="description noTitle">Alta Cumbres Torrontes - Vin Blanc</span>
+				<span class="prix">22,00 €</span>
+				<span class="description noTitle">Nieto Senetiner Malbec - Vin Rouge</span>
+				<span class="prix">18,00 €</span>
+				<span class="description noTitle">Alta Cumbres Cabernet - Vin Blanc</span>
+				<span class="prix">22,00 €</span>
+				<span class="description noTitle">Rutini Cabernet & Malbec - Vin Rouge</span>
+				<span class="prix">26,00 €</span>
+				<span class="description noTitle">Piedra Negra Rosado Pinot Gris - Vin Rosé</span>
+				<span class="prix">18,00 €</span>
+				<div class="clear"></div>
+			</div>
+		</ul>
+		
+		<div class="clear"></div>	
 		
 	</section>
 	

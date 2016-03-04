@@ -35,6 +35,7 @@
 		<!-- STYLES -->
 		<link rel="stylesheet" media="screen" type="text/css" href="css/resetCSS.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" media="screen" type="text/css" href="css/cartes.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/animsition.min.css" />
         <link rel="stylesheet" media="screen" type="text/css" href="css/cartes.css" />

@@ -96,8 +96,52 @@
 					</a>
 					<span class="prix">11,50 €</span>
 					<div id="popupChico" class="white-popup mfp-hide">
-						<h1>Formule Chico</h1>
-						
+						<h1>Personnaliser Chico</h1>
+						<form action="" method="post">
+							<h2>Choisissez vos 2 empanadas</h2>
+							<label class="checkEmpanadaLabel">B&oelig;uf</label>
+							<select name="boeufChico"><option value="0">0</option><option value="1">1</option><option value="2">2</option></select>
+							<label class="checkEmpanadaLabel">Thon</label>
+							<select name="thonChico"><option value="0">0</option><option value="1">1</option><option value="2">2</option></select><br />
+							<label class="checkEmpanadaLabel">Veau</label>
+							<select name="veauChico"><option value="0">0</option><option value="1">1</option><option value="2">2</option></select>
+							<label class="checkEmpanadaLabel">Jambon & Fromage</label>
+							<select name="jambonChico"><option value="0">0</option><option value="1">1</option><option value="2">2</option></select><br />
+							<label class="checkEmpanadaLabel">Légumes</label>
+							<select name="legumesChico"><option value="0">0</option><option value="1">1</option><option value="2">2</option></select>
+							<label class="checkEmpanadaLabel">Épinards & Ricotta</label>
+							<select name="spinashChico"><option value="0">0</option><option value="1">1</option><option value="2">2</option></select><br />
+							<label class="checkEmpanadaLabel">Choriempa (+1,00 €)</label>
+							<select name="choriempaChico"><option value="0">0</option><option value="1">1</option><option value="2">2</option></select>
+							<label class="checkEmpanadaLabel">Empanada Du Moment</label>
+							<select name="momentChico"><option value="0">0</option><option value="1">1</option><option value="2">2</option></select>
+							<h2>Choisissez votre boisson</h2>
+							<select name="boissonChico">
+								<option value="Coca 33cl">Coca 33cl</option>
+								<option value="Coca Zéro 33cl">Coca Zéro 33cl</option>
+								<option value="Ice Tea Pêche 33cl">Ice Tea Pêche 33cl</option>
+								<option value="Minute Maid Pomme 33cl">Minute Maid Pomme 33cl</option>
+								<option value="Seven Up 33cl">Seven Up 33cl</option>
+								<option value="Orangina 33cl">Orangina 33cl</option>
+								<option value="Eau Gazeuse 33cl">Eau Gazeuse 33cl</option>
+								<option value="Eau Minérale 50cl">Eau Minérale 50cl</option>
+								<option value="Gota Plate 50cl">Gota Plate 50cl</option>
+								<option value="Gota pétillante 50cl">Gota pétillante 50cl</option>
+								<option value="Quilmes 34cl">Quilmes 34cl</option>
+							</select>
+							<h2>Choisissez votre dessert</h2>
+							<select name="dessertChico">
+								<option value="Cookie">Cookie</option>
+								<option value="Fromage Blanc Au Dulce De Leche">Fromage Blanc Au Dulce De Leche</option>
+								<option value="Compote De Pommes Au Spéculoos">Compote De Pommes Au Spéculoos</option>
+								<option value="Crème Au Dulce De Leche">Crème Au Dulce De Leche</option>
+								<option value="Pâtisserie">Pâtisserie</option>
+							</select>
+							<div class="cancelValidateButtons">
+								<a href="">Annuler</a>
+								<input type="submit" name="submitChico" value="Valider" />
+							</div>
+						</form>
 					</div>
 					<span class="title">Chango</span>
 					<span class="description">3 empanadas, salade, boisson, dessert</span>
@@ -106,8 +150,52 @@
 					</a>
 					<span class="prix">13,50 €</span>
 					<div id="popupChango" class="white-popup mfp-hide">
-						<h1>Formule Chango</h1>
-						
+						<h1>Personnaliser Chango</h1>
+						<form action="" method="post">
+							<h2>Choisissez vos 3 empanadas</h2>
+							<label class="checkEmpanadaLabel">B&oelig;uf</label>
+							<select name="boeufChango"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
+							<label class="checkEmpanadaLabel">Thon</label>
+							<select name="thonChango"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><br />
+							<label class="checkEmpanadaLabel">Veau</label>
+							<select name="veauChango"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
+							<label class="checkEmpanadaLabel">Jambon & Fromage</label>
+							<select name="jambonChango"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><br />
+							<label class="checkEmpanadaLabel">Légumes</label>
+							<select name="legumesChango"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
+							<label class="checkEmpanadaLabel">Épinards & Ricotta</label>
+							<select name="spinashChango"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><br />
+							<label class="checkEmpanadaLabel">Choriempa (+1,00 €)</label>
+							<select name="choriempaChango"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
+							<label class="checkEmpanadaLabel">Empanada Du Moment</label>
+							<select name="momentChango"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
+							<h2>Choisissez votre boisson</h2>
+							<select name="boissonChango">
+								<option value="Coca 33cl">Coca 33cl</option>
+								<option value="Coca Zéro 33cl">Coca Zéro 33cl</option>
+								<option value="Ice Tea Pêche 33cl">Ice Tea Pêche 33cl</option>
+								<option value="Minute Maid Pomme 33cl">Minute Maid Pomme 33cl</option>
+								<option value="Seven Up 33cl">Seven Up 33cl</option>
+								<option value="Orangina 33cl">Orangina 33cl</option>
+								<option value="Eau Gazeuse 33cl">Eau Gazeuse 33cl</option>
+								<option value="Eau Minérale 50cl">Eau Minérale 50cl</option>
+								<option value="Gota Plate 50cl">Gota Plate 50cl</option>
+								<option value="Gota pétillante 50cl">Gota pétillante 50cl</option>
+								<option value="Quilmes 34cl">Quilmes 34cl</option>
+							</select>
+							<h2>Choisissez votre dessert</h2>
+							<select name="dessertChango">
+								<option value="Cookie">Cookie</option>
+								<option value="Fromage Blanc Au Dulce De Leche">Fromage Blanc Au Dulce De Leche</option>
+								<option value="Compote De Pommes Au Spéculoos">Compote De Pommes Au Spéculoos</option>
+								<option value="Crème Au Dulce De Leche">Crème Au Dulce De Leche</option>
+								<option value="Pâtisserie">Pâtisserie</option>
+							</select>
+							<div class="cancelValidateButtons">
+								<a href="">Annuler</a>
+								<input type="submit" name="submitChango" value="Valider" />
+							</div>
+						</form>
 					</div>
 					<span class="title">Gaucho</span>
 					<span class="description">4 empanadas, salade, boisson, dessert</span>
@@ -116,8 +204,52 @@
 					</a>
 					<span class="prix">15,50 €</span>
 					<div id="popupGaucho" class="white-popup mfp-hide">
-						<h1>Formule Gaucho</h1>
-						
+						<h1>Personnaliser Gaucho</h1>
+						<form action="" method="post">
+							<h2>Choisissez vos 4 empanadas</h2>
+							<label class="checkEmpanadaLabel">B&oelig;uf</label>
+							<select name="boeufGaucho"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>
+							<label class="checkEmpanadaLabel">Thon</label>
+							<select name="thonGaucho"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select><br />
+							<label class="checkEmpanadaLabel">Veau</label>
+							<select name="veauGaucho"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>
+							<label class="checkEmpanadaLabel">Jambon & Fromage</label>
+							<select name="jambonGaucho"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select><br />
+							<label class="checkEmpanadaLabel">Légumes</label>
+							<select name="legumesGaucho"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>
+							<label class="checkEmpanadaLabel">Épinards & Ricotta</label>
+							<select name="spinashGaucho"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select><br />
+							<label class="checkEmpanadaLabel">Choriempa (+1,00 €)</label>
+							<select name="choriempaGaucho"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>
+							<label class="checkEmpanadaLabel">Empanada Du Moment</label>
+							<select name="momentGaucho"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>
+							<h2>Choisissez votre boisson</h2>
+							<select name="boissonGaucho">
+								<option value="Coca 33cl">Coca 33cl</option>
+								<option value="Coca Zéro 33cl">Coca Zéro 33cl</option>
+								<option value="Ice Tea Pêche 33cl">Ice Tea Pêche 33cl</option>
+								<option value="Minute Maid Pomme 33cl">Minute Maid Pomme 33cl</option>
+								<option value="Seven Up 33cl">Seven Up 33cl</option>
+								<option value="Orangina 33cl">Orangina 33cl</option>
+								<option value="Eau Gazeuse 33cl">Eau Gazeuse 33cl</option>
+								<option value="Eau Minérale 50cl">Eau Minérale 50cl</option>
+								<option value="Gota Plate 50cl">Gota Plate 50cl</option>
+								<option value="Gota pétillante 50cl">Gota pétillante 50cl</option>
+								<option value="Quilmes 34cl">Quilmes 34cl</option>
+							</select>
+							<h2>Choisissez votre dessert</h2>
+							<select name="dessertGaucho">
+								<option value="Cookie">Cookie</option>
+								<option value="Fromage Blanc Au Dulce De Leche">Fromage Blanc Au Dulce De Leche</option>
+								<option value="Compote De Pommes Au Spéculoos">Compote De Pommes Au Spéculoos</option>
+								<option value="Crème Au Dulce De Leche">Crème Au Dulce De Leche</option>
+								<option value="Pâtisserie">Pâtisserie</option>
+							</select>
+							<div class="cancelValidateButtons">
+								<a href="">Annuler</a>
+								<input type="submit" name="submitGaucho" value="Valider" />
+							</div>
+						</form>
 					</div>
 					<span class="title">Degustación (2 personnes)</span>
 					<span class="description clearLeft">Nos 8 empanadas différentes, salades, 2 boissons, 2 desserts</span>
@@ -126,13 +258,62 @@
 					</a>
 					<span class="prix">34,00 €</span>
 					<div id="popupDegustacion" class="white-popup mfp-hide">
-						<h1>Formule Degustación</h1>
-						
+						<h1>Personnaliser Degustación<br />(2 personnes)</h1>
+						<form action="" method="post">
+							<h2>Choisissez votre première boisson</h2>
+							<select name="boissonDegustacion">
+								<option value="Coca 33cl">Coca 33cl</option>
+								<option value="Coca Zéro 33cl">Coca Zéro 33cl</option>
+								<option value="Ice Tea Pêche 33cl">Ice Tea Pêche 33cl</option>
+								<option value="Minute Maid Pomme 33cl">Minute Maid Pomme 33cl</option>
+								<option value="Seven Up 33cl">Seven Up 33cl</option>
+								<option value="Orangina 33cl">Orangina 33cl</option>
+								<option value="Eau Gazeuse 33cl">Eau Gazeuse 33cl</option>
+								<option value="Eau Minérale 50cl">Eau Minérale 50cl</option>
+								<option value="Gota Plate 50cl">Gota Plate 50cl</option>
+								<option value="Gota pétillante 50cl">Gota pétillante 50cl</option>
+								<option value="Quilmes 34cl">Quilmes 34cl</option>
+							</select>
+							<h2>Choisissez votre deuxième boisson</h2>
+							<select name="boissonDegustacion2">
+								<option value="Coca 33cl">Coca 33cl</option>
+								<option value="Coca Zéro 33cl">Coca Zéro 33cl</option>
+								<option value="Ice Tea Pêche 33cl">Ice Tea Pêche 33cl</option>
+								<option value="Minute Maid Pomme 33cl">Minute Maid Pomme 33cl</option>
+								<option value="Seven Up 33cl">Seven Up 33cl</option>
+								<option value="Orangina 33cl">Orangina 33cl</option>
+								<option value="Eau Gazeuse 33cl">Eau Gazeuse 33cl</option>
+								<option value="Eau Minérale 50cl">Eau Minérale 50cl</option>
+								<option value="Gota Plate 50cl">Gota Plate 50cl</option>
+								<option value="Gota pétillante 50cl">Gota pétillante 50cl</option>
+								<option value="Quilmes 34cl">Quilmes 34cl</option>
+							</select>
+							<h2>Choisissez votre premier dessert</h2>
+							<select name="dessertDegustacion">
+								<option value="Cookie">Cookie</option>
+								<option value="Fromage Blanc Au Dulce De Leche">Fromage Blanc Au Dulce De Leche</option>
+								<option value="Compote De Pommes Au Spéculoos">Compote De Pommes Au Spéculoos</option>
+								<option value="Crème Au Dulce De Leche">Crème Au Dulce De Leche</option>
+								<option value="Pâtisserie">Pâtisserie</option>
+							</select>
+							<h2>Choisissez votre deuxième dessert</h2>
+							<select name="dessertDegustacion2">
+								<option value="Cookie">Cookie</option>
+								<option value="Fromage Blanc Au Dulce De Leche">Fromage Blanc Au Dulce De Leche</option>
+								<option value="Compote De Pommes Au Spéculoos">Compote De Pommes Au Spéculoos</option>
+								<option value="Crème Au Dulce De Leche">Crème Au Dulce De Leche</option>
+								<option value="Pâtisserie">Pâtisserie</option>
+							</select>
+							<div class="cancelValidateButtons">
+								<a href="">Annuler</a>
+								<input type="submit" name="submitDegustacion" value="Valider" />
+							</div>
+						</form>
 					</div>
 					<div class="clear"></div>
 				</div>
 				
-				<li class="see-more" data-content-id="salade">FORMULE SALADE</li>
+				<!--li class="see-more" data-content-id="salade">FORMULE SALADE</li>
 				<div id="salade" class="content-toggle">
 					<span class="title">Formule Salade</span>
 					<span class="description">Salade composée autour du quinoa, boisson, dessert</span>
@@ -141,11 +322,22 @@
 					</a>
 					<span class="prix">13,50 €</span>
 					<div id="popupSalade" class="white-popup mfp-hide">
-						<h1>Formule Salade</h1>
+						<h1>Personnaliser Salade</h1>
+						<form action="" method="post">
+							<h2>Choisissez vos 2 empanadas</h2>
 						
+							<h2>Choisissez votre boisson</h2>
+						
+							<h2>Choisissez votre dessert</h2>
+							
+							<div class="cancelValidateButtons">
+								<a href="">Annuler</a>
+								<input type="submit" name="submitSalade" value="Valider" />
+							</div>
+						</form>
 					</div>
 					<div class="clear"></div>
-				</div>
+				</div-->
 				
 				<li class="see-more" data-content-id="empanalade">EMPANADAS & SALADES</li>
 				<div id="empanalade" class="content-toggle">
@@ -185,7 +377,7 @@
 					<span class="description">B&oelig;uf haché, bacon, cheddar, oignons rouges, pickles, sauce moutarde, ketchup</span>
 					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">3,50 €</span>
-					<span class="description noTitle">Salade Quinoa Mozzarella Di Buffala</span>
+					<!--span class="description noTitle">Salade Quinoa Mozzarella Di Buffala</span>
 					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">9,50 €</span>
 					<span class="description noTitle">Salade Quinoa Poulet Mariné Au Chimichuri</span>
@@ -193,7 +385,7 @@
 					<span class="prix">9,50 €</span>
 					<span class="description noTitle">Soupe Du Moment Maison</span>
 					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">4,00 €</span>
+					<span class="prix">4,00 €</span-->
 					<div class="clear"></div>
 				</div>
 				
@@ -299,13 +491,17 @@
 <!-- jQuery -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript">
+	/* Effet Slide Toggle sur les éléments de la commande */
 	$(document).ready(function(){
-		$('.content-toggle').slideToggle();
+		//$('.content-toggle').slideToggle();
 	    $('.see-more').click(function(){
 	        $('#'+$(this)[0].getAttribute('data-content-id')).slideToggle();     
 	    });
 	});
 </script>
+
+<!-- Checkbox -->
+<script type="text/javascript" src="js/form.js"></script>
 
 <!-- Magnific Popup -->
 <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>

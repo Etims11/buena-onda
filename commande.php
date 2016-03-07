@@ -89,15 +89,15 @@
 			<ul id="card-content">
 				<li class="see-more" data-content-id="empanada">FORMULES EMPANADAS</li>
 				<div id="empanada" class="content-toggle">
-					<span class="title">Chico</span>
-					<span class="description">2 empanadas, salade, boisson, dessert</span>
+					<span class="title titleChico">Chico</span>
+					<span class="description descriptionChico">2 empanadas, salade, boisson, dessert</span>
 					<a href="#popupChico" id="openPopupChico">
 						<img class="bag" src="img/commande/bag.png" alt="Sélectionner ce menu" width="22" height="22" />
 					</a>
-					<span class="prix">11,50 €</span>
+					<span class="prix prixChico">11,50 €</span>
 					<div id="popupChico" class="white-popup mfp-hide">
 						<h1>Personnaliser Chico</h1>
-						<form action="" method="post">
+						<form action="" method="post" id="formChico">
 							<h2>Choisissez vos 2 empanadas</h2>
 							<label class="checkEmpanadaLabel">B&oelig;uf</label>
 							<select name="boeufChico"><option value="0">0</option><option value="1">1</option><option value="2">2</option></select>
@@ -139,7 +139,7 @@
 							</select>
 							<div class="cancelValidateButtons">
 								<a href="">Annuler</a>
-								<input type="submit" name="submitChico" value="Valider" />
+								<input type="submit" name="submitChico" value="Valider" onclick="calculChico();" />
 							</div>
 						</form>
 					</div>
@@ -478,6 +478,8 @@
 			
 			<div class="clear"></div>
 			<input type="submit" name="submit" value="Valider ma commande" class="clearLeft" />
+			
+			<?php include('includes/form.php'); ?>
 			
 		</form>
 		

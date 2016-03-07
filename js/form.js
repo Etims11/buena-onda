@@ -6,3 +6,24 @@ $('.checkEmpanadaChico').click(function(event) {
 	    $('.checkEmpanadaChico').removeAttr('onclick').removeAttr('onkeydown');
     }
 });
+
+function calculChico() {
+	var boeuf = parseInt($('select[name="boeufChico"] option:selected').val());
+	var thon = parseInt($('select[name="thonChico"] option:selected').val());
+	var veau = parseInt($('select[name="veauChico"] option:selected').val());
+	var jambon = parseInt($('select[name="jambonChico"] option:selected').val());
+	var legumes = parseInt($('select[name="legumesChico"] option:selected').val());
+	var spinash = parseInt($('select[name="spinashChico"] option:selected').val());
+	var choriempa = parseInt($('select[name="choriempaChico"] option:selected').val());
+	var moment = parseInt($('select[name="momentChico"] option:selected').val());
+	var totalChico = boeuf + thon + veau + jambon + legumes + spinash + choriempa + moment;
+	
+	if(totalChico != 2) {
+		alert("Vous devez sélectionner au total 2 empanadas !");
+	}else {
+		$('#formChico').submit();
+		alert("Votre menu est bien enregistré !");
+		$('.titleChico, .descriptionChico, #openPopupChico, .prixChico').hide();
+		$('#popupChico .mfp-close').click();
+	}
+}

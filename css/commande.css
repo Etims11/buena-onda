@@ -42,9 +42,22 @@ ul#card-content li {
 .content-toggle select.numberOf, .content-toggle img.bag { float: right; }
 .white-popup {
 	position: relative;
+	font-family: 'Futura Condensed Medium';
 	background: #fff;
 	padding: 20px;
-	width:auto;
-	max-width: 500px;
+	width: auto;
+	max-width: 540px;
 	margin: 20px auto;
+}
+.white-popup h1 {
+	text-align: center;
+    background-color: #049ede;
+    padding: 12px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+}
+.white-popup form {
+	padding: 20px;
 }

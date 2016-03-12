@@ -79,6 +79,9 @@ a {
     box-sizing: border-box;
 }
 .clear { clear: both; }
+.mt10 { margin-top: 10px; }
+.vagRounded { font-family: 'VAG Rounded Bold'; }
+.blue { color: #00a0e0; }
 
 /*========================*/
 /*======== Header ========*/

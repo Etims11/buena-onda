@@ -6,10 +6,50 @@
 	max-width: 1060px;
 	margin: 0 auto;
 }
+h1#titleCommande {
+	width: 93%;
+	font-family: 'VAG Rounded Bold';
+	font-size: 3.5em;
+	color: #00a0e0;
+	text-align: right;
+	text-transform: uppercase;
+	margin: -70px 0 50px;
+	padding-right: 7%;
+}
+
+/* En Livraison via Deliveroo */
+#livraison {
+	float: right;
+	width: 44.7%;
+	padding-bottom: 40px;
+	border-left: 8px solid #BD9C5F;
+	border-bottom: 8px solid #BD9C5F;
+}
+#livraison h2 {
+	font-size: 1.7em;
+	text-align: left;
+	text-transform: uppercase;
+	padding-left: 14%;
+	margin: -56px 0 40px;
+}
+#livraison p {
+	padding: 0 3.5%;
+}
+#livraison p span { font-size: 1.2em; }
+#livraison p span span { font-size: 1em; }
+#livraison a#deliverooLink img {
+	display: block;
+	float: right;
+	width: 65%;
+	margin: -8px 0 0 0;
+}
+
+/* À Emporter */
 ul#card-content {
-	width: 75%;
+	width: 48.4%;
 	float: left;
 	font-size: 1.1em;
+	line-height: 1.35em;
 }
 ul#card-content li {
 	cursor: pointer;
@@ -24,40 +64,31 @@ ul#card-content li {
 	margin-bottom: 10px;
 	color: #049ede;
 }
-.content-toggle span.title, .content-toggle span.description , .content-toggle span.prix {
+span.title, span.description , span.prix {
 	display: block;
 	float: left;
 	margin-right: 2%;
 }
-.content-toggle span.title {
+span.title {
 	clear: both;
 	color: #049ede;
 }
-.content-toggle span.noTitle { clear: right; }
-.content-toggle span.clearLeft { clear: left; }
-.content-toggle span.prix {
+span.noTitle { clear: right; }
+span.clearLeft { clear: left; }
+span.prix {
 	float: right;
 	background: rgba(255, 255, 255, 0.1);
 }
-.content-toggle select.numberOf, .content-toggle img.bag { float: right; }
-.white-popup {
-	position: relative;
-	font-family: 'Futura Condensed Medium';
-	background: #fff;
-	padding: 20px;
-	width: auto;
-	max-width: 540px;
-	margin: 20px auto;
+select.numberOf { float: right; }
+img.bag {
+	float: right;
+	cursor: pointer;
 }
-.white-popup h1 {
-	text-align: center;
-    background-color: #049ede;
-    padding: 12px 0;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.2em;
-    letter-spacing: 0.05em;
+form {
+	clear: left;
+	padding: 20px 0 10px 10%;
 }
-.white-popup form {
-	padding: 20px;
+form#formGeneral { padding-left: 0; }
+input[type="submit"] {
+	display: block;
 }

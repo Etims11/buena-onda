@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html>
 	
@@ -36,7 +38,6 @@
 		<link rel="stylesheet" media="screen" type="text/css" href="css/resetCSS.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/commande.css" />
-		<link rel="stylesheet" media="screen" type="text/css" href="css/magnific-popup.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
 	</head>
 
@@ -83,263 +84,183 @@
 	?>
 	
 	<section id="body">
-		
-		<form action="" method="post">
+			
+			<img src="img/commande/background-title-commander.png" alt="Commandez à emporter ou en livraison chez Buena Onda" width="100%" />
+			<h1 id="titleCommande">Commander</h1>
+			
+			<div id="livraison">
+				<img src="img/commande/bandeau-livraison.png" alt="Commandez en livraison chez Buena Onda" width="100%" />
+				<h2 class="vagRounded blue">En livraison</h2>
+				<p>
+					<span class="vagRounded"><span class="blue">Et si les empanadas arrivaient directement chez vous !</span><br />
+					Et en 30 minutes environ!</span><br /><br />
+					Vous souhaitez être livré et pouvoir savourer nos empanadas chez vous ou à votre travail.<br />
+					Allez directement sur le site Internet de notre partenaire et choisissez quels seront les délicieux 
+					chaussons «faits maison» qui partageront votre repas aujourd’hui.<br /><br />
+					<span class="vagRounded"><span class="blue">Pour se faire livrer,</span> c’est par ici ...</span>
+				</p>
+				<a href="https://deliveroo.fr/menu/paris/courcelles-wagram/buena-onda" target="_blank" id="deliverooLink">
+					<img src="img/commande/deliveroo-pointillers.png" alt="Commander Buena Onda via Deliveroo" />
+				</a>
+			</div>
+			
+			<div class="clear"></div>
 			
 			<ul id="card-content">
-				<li class="see-more" data-content-id="empanada">FORMULES EMPANADAS</li>
-				<div id="empanada" class="content-toggle">
+				<p id="intro">
+					<span class="blue">Vous êtes dans le coin et vous avez un petit creux...</span><br />
+					Commandez ici et venez chercher votre repas dans 
+					notre restaurant le plus près.
+				</p>
+				<li>FORMULES EMPANADAS</li>
+				<div id="empanada">
 					<span class="title titleChico">Chico</span>
 					<span class="description descriptionChico">2 empanadas, salade, boisson, dessert</span>
-					<a href="#popupChico" id="openPopupChico">
-						<img class="bag" src="img/commande/bag.png" alt="Sélectionner ce menu" width="22" height="22" />
-					</a>
-					<span class="prix prixChico">11,50 €</span>
-					<div id="popupChico" class="white-popup mfp-hide">
-						<h1>Personnaliser Chico</h1>
-						<form action="" method="post" id="formChico">
+					<img src="img/commande/bag.png" alt="Sélectionner ce menu" width="23" height="23" class="see-more bag" data-content-id="formChico" />
+					<span class="prix prixChico">10,50 €</span>
+					
+						<form action="" method="post" id="formChico" class="content-toggle">
 							<h2>Choisissez vos 2 empanadas</h2>
-							<label class="checkEmpanadaLabel">B&oelig;uf</label>
-							<select name="boeufChico"><option value="0">0</option><option value="1">1</option><option value="2">2</option></select>
-							<label class="checkEmpanadaLabel">Thon</label>
-							<select name="thonChico"><option value="0">0</option><option value="1">1</option><option value="2">2</option></select><br />
-							<label class="checkEmpanadaLabel">Veau</label>
-							<select name="veauChico"><option value="0">0</option><option value="1">1</option><option value="2">2</option></select>
-							<label class="checkEmpanadaLabel">Jambon & Fromage</label>
-							<select name="jambonChico"><option value="0">0</option><option value="1">1</option><option value="2">2</option></select><br />
-							<label class="checkEmpanadaLabel">Légumes</label>
-							<select name="legumesChico"><option value="0">0</option><option value="1">1</option><option value="2">2</option></select>
-							<label class="checkEmpanadaLabel">Épinards & Ricotta</label>
-							<select name="spinashChico"><option value="0">0</option><option value="1">1</option><option value="2">2</option></select><br />
-							<label class="checkEmpanadaLabel">Choriempa (+1,00 €)</label>
-							<select name="choriempaChico"><option value="0">0</option><option value="1">1</option><option value="2">2</option></select>
-							<label class="checkEmpanadaLabel">Empanada Du Moment</label>
-							<select name="momentChico"><option value="0">0</option><option value="1">1</option><option value="2">2</option></select>
-							<h2>Choisissez votre boisson</h2>
+							<label class="firstEmpanadaLabel">Première empanada</label>
+							<select name="firstEmpanadaChico">
+								<?php include('includes/empanadas.html'); ?>
+							</select><br />
+							<label class="secondEmpanadaChicoLabel">Seconde empanada</label>
+							<select name="secondEmpanadaChico">
+								<?php include('includes/empanadas.html'); ?>
+							</select><br />
+							<label class="boissonChicoLabel">Choisissez votre boisson</label>
 							<select name="boissonChico">
-								<option value="Coca 33cl">Coca 33cl</option>
-								<option value="Coca Zéro 33cl">Coca Zéro 33cl</option>
-								<option value="Ice Tea Pêche 33cl">Ice Tea Pêche 33cl</option>
-								<option value="Minute Maid Pomme 33cl">Minute Maid Pomme 33cl</option>
-								<option value="Seven Up 33cl">Seven Up 33cl</option>
-								<option value="Orangina 33cl">Orangina 33cl</option>
-								<option value="Eau Gazeuse 33cl">Eau Gazeuse 33cl</option>
-								<option value="Eau Minérale 50cl">Eau Minérale 50cl</option>
-								<option value="Gota Plate 50cl">Gota Plate 50cl</option>
-								<option value="Gota pétillante 50cl">Gota pétillante 50cl</option>
-								<option value="Quilmes 34cl">Quilmes 34cl</option>
-							</select>
-							<h2>Choisissez votre dessert</h2>
+								<?php include('includes/boissons.html'); ?>
+							</select><br />
+							<label class="dessertChicoLabel">Choisissez votre dessert</label>
 							<select name="dessertChico">
-								<option value="Cookie">Cookie</option>
-								<option value="Fromage Blanc Au Dulce De Leche">Fromage Blanc Au Dulce De Leche</option>
-								<option value="Compote De Pommes Au Spéculoos">Compote De Pommes Au Spéculoos</option>
-								<option value="Crème Au Dulce De Leche">Crème Au Dulce De Leche</option>
-								<option value="Pâtisserie">Pâtisserie</option>
+								<?php include('includes/desserts.html'); ?>
 							</select>
-							<div class="cancelValidateButtons">
-								<a href="">Annuler</a>
-								<input type="submit" name="submitChico" value="Valider" onclick="calculChico();" />
-							</div>
+							<input type="submit" name="submitChico" value="Valider" onclick="calculChico();" />
 						</form>
-					</div>
+						<div class="clear"></div>
+
 					<span class="title">Chango</span>
 					<span class="description">3 empanadas, salade, boisson, dessert</span>
-					<a href="#popupChango" id="openPopupChango">
-						<img class="bag" src="img/commande/bag.png" alt="Sélectionner ce menu" width="22" height="22" />
-					</a>
-					<span class="prix">13,50 €</span>
-					<div id="popupChango" class="white-popup mfp-hide">
-						<h1>Personnaliser Chango</h1>
-						<form action="" method="post">
+					<img src="img/commande/bag.png" alt="Sélectionner ce menu" width="23" height="23" class="see-more bag" data-content-id="formChango" />
+					<span class="prix prixChango">12,50 €</span>
+					
+						<form action="" method="post" id="formChango" class="content-toggle">
 							<h2>Choisissez vos 3 empanadas</h2>
-							<label class="checkEmpanadaLabel">B&oelig;uf</label>
-							<select name="boeufChango"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
-							<label class="checkEmpanadaLabel">Thon</label>
-							<select name="thonChango"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><br />
-							<label class="checkEmpanadaLabel">Veau</label>
-							<select name="veauChango"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
-							<label class="checkEmpanadaLabel">Jambon & Fromage</label>
-							<select name="jambonChango"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><br />
-							<label class="checkEmpanadaLabel">Légumes</label>
-							<select name="legumesChango"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
-							<label class="checkEmpanadaLabel">Épinards & Ricotta</label>
-							<select name="spinashChango"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select><br />
-							<label class="checkEmpanadaLabel">Choriempa (+1,00 €)</label>
-							<select name="choriempaChango"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
-							<label class="checkEmpanadaLabel">Empanada Du Moment</label>
-							<select name="momentChango"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
-							<h2>Choisissez votre boisson</h2>
+							<label class="firstEmpanadaLabel">Première empanada</label>
+							<select name="firstEmpanadaChango">
+								<?php include('includes/empanadas.html'); ?>
+							</select><br />
+							<label class="secondEmpanadaLabel">Deuxième empanada</label>
+							<select name="secondEmpanadaChango">
+								<?php include('includes/empanadas.html'); ?>
+							</select><br />
+							<label class="thirdEmpanadaLabel">Troisième empanada</label>
+							<select name="thirdEmpanadaChango">
+								<?php include('includes/empanadas.html'); ?>
+							</select><br />
+							<label class="boissonChangoLabel">Choisissez votre boisson</label>
 							<select name="boissonChango">
-								<option value="Coca 33cl">Coca 33cl</option>
-								<option value="Coca Zéro 33cl">Coca Zéro 33cl</option>
-								<option value="Ice Tea Pêche 33cl">Ice Tea Pêche 33cl</option>
-								<option value="Minute Maid Pomme 33cl">Minute Maid Pomme 33cl</option>
-								<option value="Seven Up 33cl">Seven Up 33cl</option>
-								<option value="Orangina 33cl">Orangina 33cl</option>
-								<option value="Eau Gazeuse 33cl">Eau Gazeuse 33cl</option>
-								<option value="Eau Minérale 50cl">Eau Minérale 50cl</option>
-								<option value="Gota Plate 50cl">Gota Plate 50cl</option>
-								<option value="Gota pétillante 50cl">Gota pétillante 50cl</option>
-								<option value="Quilmes 34cl">Quilmes 34cl</option>
-							</select>
-							<h2>Choisissez votre dessert</h2>
+								<?php include('includes/boissons.html'); ?>
+							</select><br />
+							<label class="dessertChangoLabel">Choisissez votre dessert</label>
 							<select name="dessertChango">
-								<option value="Cookie">Cookie</option>
-								<option value="Fromage Blanc Au Dulce De Leche">Fromage Blanc Au Dulce De Leche</option>
-								<option value="Compote De Pommes Au Spéculoos">Compote De Pommes Au Spéculoos</option>
-								<option value="Crème Au Dulce De Leche">Crème Au Dulce De Leche</option>
-								<option value="Pâtisserie">Pâtisserie</option>
+								<?php include('includes/desserts.html'); ?>
 							</select>
-							<div class="cancelValidateButtons">
-								<a href="">Annuler</a>
-								<input type="submit" name="submitChango" value="Valider" />
-							</div>
+							<input type="submit" name="submitChango" value="Valider" onclick="calculChango();" />
 						</form>
-					</div>
+						<div class="clear"></div>
+						
 					<span class="title">Gaucho</span>
 					<span class="description">4 empanadas, salade, boisson, dessert</span>
-					<a href="#popupGaucho" id="openPopupGaucho">
-						<img class="bag" src="img/commande/bag.png" alt="Sélectionner ce menu" width="22" height="22" />
-					</a>
-					<span class="prix">15,50 €</span>
-					<div id="popupGaucho" class="white-popup mfp-hide">
-						<h1>Personnaliser Gaucho</h1>
-						<form action="" method="post">
-							<h2>Choisissez vos 4 empanadas</h2>
-							<label class="checkEmpanadaLabel">B&oelig;uf</label>
-							<select name="boeufGaucho"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>
-							<label class="checkEmpanadaLabel">Thon</label>
-							<select name="thonGaucho"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select><br />
-							<label class="checkEmpanadaLabel">Veau</label>
-							<select name="veauGaucho"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>
-							<label class="checkEmpanadaLabel">Jambon & Fromage</label>
-							<select name="jambonGaucho"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select><br />
-							<label class="checkEmpanadaLabel">Légumes</label>
-							<select name="legumesGaucho"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>
-							<label class="checkEmpanadaLabel">Épinards & Ricotta</label>
-							<select name="spinashGaucho"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select><br />
-							<label class="checkEmpanadaLabel">Choriempa (+1,00 €)</label>
-							<select name="choriempaGaucho"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>
-							<label class="checkEmpanadaLabel">Empanada Du Moment</label>
-							<select name="momentGaucho"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>
-							<h2>Choisissez votre boisson</h2>
+					<img src="img/commande/bag.png" alt="Sélectionner ce menu" width="23" height="23" class="see-more bag" data-content-id="formGaucho" />
+					<span class="prix prixGaucho">14,50 €</span>
+
+						<form action="" method="post" id="formGaucho" class="content-toggle">
+							<h2>Choisissez vos 3 empanadas</h2>
+							<label class="firstEmpanadaLabel">Première empanada</label>
+							<select name="firstEmpanadaGaucho">
+								<?php include('includes/empanadas.html'); ?>
+							</select><br />
+							<label class="secondEmpanadaLabel">Deuxième empanada</label>
+							<select name="secondEmpanadaGaucho">
+								<?php include('includes/empanadas.html'); ?>
+							</select><br />
+							<label class="thirdEmpanadaLabel">Troisième empanada</label>
+							<select name="thirdEmpanadaGaucho">
+								<?php include('includes/empanadas.html'); ?>
+							</select><br />
+							<label class="fourthEmpanadaLabel">Quatrième empanada</label>
+							<select name="fourthEmpanadaGaucho">
+								<?php include('includes/empanadas.html'); ?>
+							</select><br />
+							<label class="boissonGauchoLabel">Choisissez votre boisson</label>
 							<select name="boissonGaucho">
-								<option value="Coca 33cl">Coca 33cl</option>
-								<option value="Coca Zéro 33cl">Coca Zéro 33cl</option>
-								<option value="Ice Tea Pêche 33cl">Ice Tea Pêche 33cl</option>
-								<option value="Minute Maid Pomme 33cl">Minute Maid Pomme 33cl</option>
-								<option value="Seven Up 33cl">Seven Up 33cl</option>
-								<option value="Orangina 33cl">Orangina 33cl</option>
-								<option value="Eau Gazeuse 33cl">Eau Gazeuse 33cl</option>
-								<option value="Eau Minérale 50cl">Eau Minérale 50cl</option>
-								<option value="Gota Plate 50cl">Gota Plate 50cl</option>
-								<option value="Gota pétillante 50cl">Gota pétillante 50cl</option>
-								<option value="Quilmes 34cl">Quilmes 34cl</option>
-							</select>
-							<h2>Choisissez votre dessert</h2>
+								<?php include('includes/boissons.html'); ?>
+							</select><br />
+							<label class="dessertGauchoLabel">Choisissez votre dessert</label>
 							<select name="dessertGaucho">
-								<option value="Cookie">Cookie</option>
-								<option value="Fromage Blanc Au Dulce De Leche">Fromage Blanc Au Dulce De Leche</option>
-								<option value="Compote De Pommes Au Spéculoos">Compote De Pommes Au Spéculoos</option>
-								<option value="Crème Au Dulce De Leche">Crème Au Dulce De Leche</option>
-								<option value="Pâtisserie">Pâtisserie</option>
+								<?php include('includes/desserts.html'); ?>
 							</select>
-							<div class="cancelValidateButtons">
-								<a href="">Annuler</a>
-								<input type="submit" name="submitGaucho" value="Valider" />
-							</div>
+							<input type="submit" name="submitGaucho" value="Valider" onclick="calculGaucho();" />
 						</form>
-					</div>
+						<div class="clear"></div>
+
 					<span class="title">Degustación (2 personnes)</span>
-					<span class="description clearLeft">Nos 8 empanadas différentes, salades, 2 boissons, 2 desserts</span>
-					<a href="#popupDegustacion" id="openPopupDegustacion">
-						<img class="bag" src="img/commande/bag.png" alt="Sélectionner ce menu" width="22" height="22" />
-					</a>
-					<span class="prix">34,00 €</span>
-					<div id="popupDegustacion" class="white-popup mfp-hide">
-						<h1>Personnaliser Degustación<br />(2 personnes)</h1>
-						<form action="" method="post">
+					<span class="description clearLeft">Nos 8 empanadas différentes, salades,<br />2 boissons(Soda ou bière Argentine), 2 desserts</span>
+					<img src="img/commande/bag.png" alt="Sélectionner ce menu" width="23" height="23" class="see-more bag" data-content-id="formDegustacion" />
+					<span class="prix prixDegustacion">34,00 €</span>
+
+						<form action="" method="post" id="formDegustacion" class="content-toggle">
 							<h2>Choisissez votre première boisson</h2>
 							<select name="boissonDegustacion">
-								<option value="Coca 33cl">Coca 33cl</option>
-								<option value="Coca Zéro 33cl">Coca Zéro 33cl</option>
-								<option value="Ice Tea Pêche 33cl">Ice Tea Pêche 33cl</option>
-								<option value="Minute Maid Pomme 33cl">Minute Maid Pomme 33cl</option>
-								<option value="Seven Up 33cl">Seven Up 33cl</option>
-								<option value="Orangina 33cl">Orangina 33cl</option>
-								<option value="Eau Gazeuse 33cl">Eau Gazeuse 33cl</option>
-								<option value="Eau Minérale 50cl">Eau Minérale 50cl</option>
-								<option value="Gota Plate 50cl">Gota Plate 50cl</option>
-								<option value="Gota pétillante 50cl">Gota pétillante 50cl</option>
-								<option value="Quilmes 34cl">Quilmes 34cl</option>
+								<?php include('includes/boissons.html'); ?>
 							</select>
-							<h2>Choisissez votre deuxième boisson</h2>
+							<h2>Choisissez votre seconde boisson</h2>
 							<select name="boissonDegustacion2">
-								<option value="Coca 33cl">Coca 33cl</option>
-								<option value="Coca Zéro 33cl">Coca Zéro 33cl</option>
-								<option value="Ice Tea Pêche 33cl">Ice Tea Pêche 33cl</option>
-								<option value="Minute Maid Pomme 33cl">Minute Maid Pomme 33cl</option>
-								<option value="Seven Up 33cl">Seven Up 33cl</option>
-								<option value="Orangina 33cl">Orangina 33cl</option>
-								<option value="Eau Gazeuse 33cl">Eau Gazeuse 33cl</option>
-								<option value="Eau Minérale 50cl">Eau Minérale 50cl</option>
-								<option value="Gota Plate 50cl">Gota Plate 50cl</option>
-								<option value="Gota pétillante 50cl">Gota pétillante 50cl</option>
-								<option value="Quilmes 34cl">Quilmes 34cl</option>
+								<?php include('includes/boissons.html'); ?>
 							</select>
 							<h2>Choisissez votre premier dessert</h2>
 							<select name="dessertDegustacion">
-								<option value="Cookie">Cookie</option>
-								<option value="Fromage Blanc Au Dulce De Leche">Fromage Blanc Au Dulce De Leche</option>
-								<option value="Compote De Pommes Au Spéculoos">Compote De Pommes Au Spéculoos</option>
-								<option value="Crème Au Dulce De Leche">Crème Au Dulce De Leche</option>
-								<option value="Pâtisserie">Pâtisserie</option>
+								<?php include('includes/desserts.html'); ?>
 							</select>
-							<h2>Choisissez votre deuxième dessert</h2>
+							<h2>Choisissez votre second dessert</h2>
 							<select name="dessertDegustacion2">
-								<option value="Cookie">Cookie</option>
-								<option value="Fromage Blanc Au Dulce De Leche">Fromage Blanc Au Dulce De Leche</option>
-								<option value="Compote De Pommes Au Spéculoos">Compote De Pommes Au Spéculoos</option>
-								<option value="Crème Au Dulce De Leche">Crème Au Dulce De Leche</option>
-								<option value="Pâtisserie">Pâtisserie</option>
+								<?php include('includes/desserts.html'); ?>
 							</select>
-							<div class="cancelValidateButtons">
-								<a href="">Annuler</a>
-								<input type="submit" name="submitDegustacion" value="Valider" />
-							</div>
+							<input type="submit" name="submitDegustacion" value="Valider" onclick="calculDegustacion();" />
 						</form>
-					</div>
-					<div class="clear"></div>
+						<div class="clear"></div>
+						
 				</div>
 				
-				<!--li class="see-more" data-content-id="salade">FORMULE SALADE</li>
-				<div id="salade" class="content-toggle">
-					<span class="title">Formule Salade</span>
-					<span class="description">Salade composée autour du quinoa, boisson, dessert</span>
-					<a href="#popupSalade" id="openPopupSalade">
-						<img class="bag" src="img/commande/bag.png" alt="Sélectionner ce menu" width="22" height="22" />
-					</a>
-					<span class="prix">13,50 €</span>
-					<div id="popupSalade" class="white-popup mfp-hide">
-						<h1>Personnaliser Salade</h1>
-						<form action="" method="post">
+				<li class="see-more mt10">FORMULE SALADE QUINOA</li>
+				<div id="salade">
+					<span class="title">Quinoa, Mozzarella, tomates, maïs sauce chimichurri</span>
+					<span class="description clearLeft">Quinoa, tomates, maïs, poulet mariné chimichurri</span>
+					<img src="img/commande/bag.png" alt="Sélectionner ce menu" width="23" height="23" class="see-more bag" data-content-id="formSalade" />
+					<span class="prix prixSalade">12,50 €</span>
+						
+						<form action="" method="post" id="formSalade" class="content-toggle">
 							<h2>Choisissez vos 2 empanadas</h2>
-						
-							<h2>Choisissez votre boisson</h2>
-						
-							<h2>Choisissez votre dessert</h2>
-							
-							<div class="cancelValidateButtons">
-								<a href="">Annuler</a>
-								<input type="submit" name="submitSalade" value="Valider" />
-							</div>
+							<label class="boissonSaladeLabel">Choisissez votre boisson</label>
+							<select name="boissonSalade">
+								<?php include('includes/boissons.html'); ?>
+							</select><br />
+							<label class="dessertSaladeLabel">Choisissez votre dessert</label>
+							<select name="dessertSalade">
+								<?php include('includes/desserts.html'); ?>
+							</select>
+							<input type="submit" name="submitSalade" value="Valider" onclick="calculSalade();" />
 						</form>
-					</div>
-					<div class="clear"></div>
-				</div-->
+						<div class="clear"></div>
+						
+				</div>
 				
-				<li class="see-more" data-content-id="empanalade">EMPANADAS & SALADES</li>
+				<form action="" method="post" id="formGeneral">
+				
+				<li class="see-more" data-content-id="empanalade">EMPANADAS</li>
 				<div id="empanalade" class="content-toggle">
 					<p >
 						Nos empanadas sont préparées quotidiennement dans nos cuisines, à base de produits frais. 
@@ -347,64 +268,59 @@
 					</p>
 					<span class="title">B&oelig;uf</span>
 					<span class="description">B&oelig;uf haché maison, oignons, épices argentines, &oelig;uf, olives</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name="empanadaBoeuf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<span class="prix">3,50 €</span>
+					<span class="title">Burger</span>
+					<span class="description">B&oelig;uf haché, cheddar, sauce moutarde, miel, ketchup, pickles, oignons rouges</span>
+					<select class="numberOf" name="empanadaBurger"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">3,50 €</span>
 					<span class="title">Thon</span>
-					<span class="description">Thon, oignons, tomates, mimosa d'œuf dur, olives</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<span class="description">Thon, oignons, tomates, mimosa d'&oelig;uf dur, olives</span>
+					<select class="numberOf" name="empanadaThon"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">3,50 €</span>
 					<span class="title">Veau</span>
 					<span class="description">Sauté de veau haché maison, coriandre, tomates, citrons confis, ail</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name="empanadaVeau"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">3,50 €</span>
 					<span class="title">Jambon & Fromage</span>
 					<span class="description">Jambon blanc, emmental, mozzarella</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name="empanadaJambon"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">3,50 €</span>
 					<span class="title">Légumes</span>
 					<span class="description">Poivrons, oignons, tomates, confis dans du velouté de balsamique</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">3,50 €</span>
 					<span class="title">Épinards & Ricotta</span>
 					<span class="description">Épinards, ricotta, mozzarella, muscade</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">3,50 €</span>
 					<span class="title">Choriempa</span>
 					<span class="description">Chorizo argentin grillé</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">4,50 €</span>
 					<span class="title">Empanada Du Moment</span>
 					<span class="description">B&oelig;uf haché, bacon, cheddar, oignons rouges, pickles, sauce moutarde, ketchup</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">3,50 €</span>
-					<!--span class="description noTitle">Salade Quinoa Mozzarella Di Buffala</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">9,50 €</span>
-					<span class="description noTitle">Salade Quinoa Poulet Mariné Au Chimichuri</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">9,50 €</span>
-					<span class="description noTitle">Soupe Du Moment Maison</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">4,00 €</span-->
 					<div class="clear"></div>
 				</div>
 				
 				<li class="see-more" data-content-id="dessert">DESSERTS</li>
 				<div id="dessert" class="content-toggle">
 					<span class="description noTitle">Cookie</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">3,50 €</span>
 					<span class="description noTitle">Fromage Blanc Au Dulce De Leche</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">4,50 €</span>
 					<span class="description noTitle">Compote De Pommes Au Spéculoos</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">4,50 €</span>
 					<span class="description noTitle">Crème Au Dulce De Leche</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">6,00 €</span>
 					<span class="description noTitle">Pâtisserie</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">6,00 €</span>
 					<div class="clear"></div>
 				</div>
@@ -412,34 +328,34 @@
 				<li class="see-more" data-content-id="soft">SOFTS</li>
 				<div id="soft" class="content-toggle">
 					<span class="description noTitle">Coca 33cl</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">2,50 €</span>
 					<span class="description noTitle">Coca Zéro 33cl</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">2,50 €</span>
 					<span class="description noTitle">Ice Tea Pêche 33cl</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">2,50 €</span>
 					<span class="description noTitle">Minute Maid Pomme 33cl</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">2,50 €</span>
 					<span class="description noTitle">Seven Up 33cl</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">2,50 €</span>
 					<span class="description noTitle">Orangina 33cl</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">2,50 €</span>
 					<span class="description noTitle">Eau Gazeuse 33cl</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">2,50 €</span>
 					<span class="description noTitle">Eau Minérale 50cl</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">2,50 €</span>
 					<span class="description noTitle">Gota Plate 50cl, Eau argentine</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">4,50 €</span>
 					<span class="description noTitle">Gota pétillante 50cl, Eau argentine</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">5,00 €</span>
 					<div class="clear"></div>
 				</div>
@@ -447,7 +363,7 @@
 				<li class="see-more" data-content-id="beer">BIÈRE</li>
 				<div id="beer" class="content-toggle">
 					<span class="description noTitle">Quilmes 34cl, Bière argentine</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">5,00 €</span>
 					<div class="clear"></div>
 				</div>
@@ -455,36 +371,34 @@
 				<li class="see-more" data-content-id="wine">VINS</li>
 				<div id="wine" class="content-toggle">
 					<span class="description noTitle">Trapiche Chardonnay - Vin Blanc</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">18,00 €</span>
 					<span class="description noTitle">Alta Cumbres Torrontes - Vin Blanc</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">22,00 €</span>
 					<span class="description noTitle">Nieto Senetiner Malbec - Vin Rouge</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">18,00 €</span>
-					<span class="description noTitle">Alta Cumbres Cabernet - Vin Blanc</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<span class="description noTitle">Alta Cumbres Cabernet Sauvignon - Vin Rouge</span>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">22,00 €</span>
 					<span class="description noTitle">Rutini Cabernet & Malbec - Vin Rouge</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">26,00 €</span>
 					<span class="description noTitle">Piedra Negra Rosado Pinot Gris - Vin Rosé</span>
-					<select class="numberOf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
 					<span class="prix">18,00 €</span>
 					<div class="clear"></div>
 				</div>
+				</form>
 			</ul>
 			
 			<div class="clear"></div>
-			<input type="submit" name="submit" value="Valider ma commande" class="clearLeft" />
+			<input type="submit" name="submitGeneral" value="Valider ma commande" class="clearLeft" onclick="calculGeneral();" />
+			<div class="clear"></div>
 			
 			<?php include('includes/form.php'); ?>
-			
-		</form>
-		
-		<div class="clear"></div>	
-		
+				
 	</section>
 	
 	<?php include('includes/footer.html'); ?>
@@ -495,21 +409,15 @@
 <script type="text/javascript">
 	/* Effet Slide Toggle sur les éléments de la commande */
 	$(document).ready(function(){
-		//$('.content-toggle').slideToggle();
+		$('.content-toggle').css('display', 'none');
 	    $('.see-more').click(function(){
 	        $('#'+$(this)[0].getAttribute('data-content-id')).slideToggle();     
 	    });
 	});
 </script>
 
-<!-- Checkbox -->
+<!-- Traitement formulaires -->
 <script type="text/javascript" src="js/form.js"></script>
-
-<!-- Magnific Popup -->
-<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-<script type="text/javascript">
-	$('#openPopupChico, #openPopupChango, #openPopupGaucho, #openPopupDegustacion, #openPopupSalade').magnificPopup({ type: 'inline' });
-</script>
 
 <!-- Simple Slide Menu -->
 <script type="text/javascript" src="js/menu.js"></script>

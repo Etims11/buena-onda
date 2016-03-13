@@ -79,7 +79,7 @@ a {
     box-sizing: border-box;
 }
 .clear { clear: both; }
-.mt10 { margin-top: 10px; }
+.mt30 { margin-top: 30px; }
 .vagRounded { font-family: 'VAG Rounded Bold'; }
 .blue { color: #00a0e0; }
 
@@ -298,7 +298,7 @@ nav a:hover, nav a:focus, nav a.active {
 footer p {
 	text-align: center;
 	font-size: 0.9em;
-	padding: 30px 5%;
+	padding: 100px 5% 20px;
 }
 footer p a { color: #0899d5; }
 footer p a:hover, footer p a:focus {

@@ -106,298 +106,341 @@
 			
 			<div class="clear"></div>
 			
-			<ul id="card-content">
-				<p id="intro">
-					<span class="blue">Vous êtes dans le coin et vous avez un petit creux...</span><br />
-					Commandez ici et venez chercher votre repas dans 
-					notre restaurant le plus près.
-				</p>
-				<li>FORMULES EMPANADAS</li>
-				<div id="empanada">
-					<span class="title titleChico">Chico</span>
-					<span class="description descriptionChico">2 empanadas, salade, boisson, dessert</span>
-					<img src="img/commande/bag.png" alt="Sélectionner ce menu" width="23" height="23" class="see-more bag" data-content-id="formChico" />
-					<span class="prix prixChico">10,50 €</span>
-					
-						<form action="" method="post" id="formChico" class="content-toggle">
-							<h2>Choisissez vos 2 empanadas</h2>
-							<label class="firstEmpanadaLabel">Première empanada</label>
-							<select name="firstEmpanadaChico">
-								<?php include('includes/empanadas.html'); ?>
-							</select><br />
-							<label class="secondEmpanadaChicoLabel">Seconde empanada</label>
-							<select name="secondEmpanadaChico">
-								<?php include('includes/empanadas.html'); ?>
-							</select><br />
-							<label class="boissonChicoLabel">Choisissez votre boisson</label>
-							<select name="boissonChico">
-								<?php include('includes/boissons.html'); ?>
-							</select><br />
-							<label class="dessertChicoLabel">Choisissez votre dessert</label>
-							<select name="dessertChico">
-								<?php include('includes/desserts.html'); ?>
-							</select>
-							<input type="submit" name="submitChico" value="Valider" onclick="calculChico();" />
-						</form>
-						<div class="clear"></div>
-
-					<span class="title">Chango</span>
-					<span class="description">3 empanadas, salade, boisson, dessert</span>
-					<img src="img/commande/bag.png" alt="Sélectionner ce menu" width="23" height="23" class="see-more bag" data-content-id="formChango" />
-					<span class="prix prixChango">12,50 €</span>
-					
-						<form action="" method="post" id="formChango" class="content-toggle">
-							<h2>Choisissez vos 3 empanadas</h2>
-							<label class="firstEmpanadaLabel">Première empanada</label>
-							<select name="firstEmpanadaChango">
-								<?php include('includes/empanadas.html'); ?>
-							</select><br />
-							<label class="secondEmpanadaLabel">Deuxième empanada</label>
-							<select name="secondEmpanadaChango">
-								<?php include('includes/empanadas.html'); ?>
-							</select><br />
-							<label class="thirdEmpanadaLabel">Troisième empanada</label>
-							<select name="thirdEmpanadaChango">
-								<?php include('includes/empanadas.html'); ?>
-							</select><br />
-							<label class="boissonChangoLabel">Choisissez votre boisson</label>
-							<select name="boissonChango">
-								<?php include('includes/boissons.html'); ?>
-							</select><br />
-							<label class="dessertChangoLabel">Choisissez votre dessert</label>
-							<select name="dessertChango">
-								<?php include('includes/desserts.html'); ?>
-							</select>
-							<input type="submit" name="submitChango" value="Valider" onclick="calculChango();" />
-						</form>
-						<div class="clear"></div>
-						
-					<span class="title">Gaucho</span>
-					<span class="description">4 empanadas, salade, boisson, dessert</span>
-					<img src="img/commande/bag.png" alt="Sélectionner ce menu" width="23" height="23" class="see-more bag" data-content-id="formGaucho" />
-					<span class="prix prixGaucho">14,50 €</span>
-
-						<form action="" method="post" id="formGaucho" class="content-toggle">
-							<h2>Choisissez vos 3 empanadas</h2>
-							<label class="firstEmpanadaLabel">Première empanada</label>
-							<select name="firstEmpanadaGaucho">
-								<?php include('includes/empanadas.html'); ?>
-							</select><br />
-							<label class="secondEmpanadaLabel">Deuxième empanada</label>
-							<select name="secondEmpanadaGaucho">
-								<?php include('includes/empanadas.html'); ?>
-							</select><br />
-							<label class="thirdEmpanadaLabel">Troisième empanada</label>
-							<select name="thirdEmpanadaGaucho">
-								<?php include('includes/empanadas.html'); ?>
-							</select><br />
-							<label class="fourthEmpanadaLabel">Quatrième empanada</label>
-							<select name="fourthEmpanadaGaucho">
-								<?php include('includes/empanadas.html'); ?>
-							</select><br />
-							<label class="boissonGauchoLabel">Choisissez votre boisson</label>
-							<select name="boissonGaucho">
-								<?php include('includes/boissons.html'); ?>
-							</select><br />
-							<label class="dessertGauchoLabel">Choisissez votre dessert</label>
-							<select name="dessertGaucho">
-								<?php include('includes/desserts.html'); ?>
-							</select>
-							<input type="submit" name="submitGaucho" value="Valider" onclick="calculGaucho();" />
-						</form>
-						<div class="clear"></div>
-
-					<span class="title">Degustación (2 personnes)</span>
-					<span class="description clearLeft">Nos 8 empanadas différentes, salades,<br />2 boissons(Soda ou bière Argentine), 2 desserts</span>
-					<img src="img/commande/bag.png" alt="Sélectionner ce menu" width="23" height="23" class="see-more bag" data-content-id="formDegustacion" />
-					<span class="prix prixDegustacion">34,00 €</span>
-
-						<form action="" method="post" id="formDegustacion" class="content-toggle">
-							<h2>Choisissez votre première boisson</h2>
-							<select name="boissonDegustacion">
-								<?php include('includes/boissons.html'); ?>
-							</select>
-							<h2>Choisissez votre seconde boisson</h2>
-							<select name="boissonDegustacion2">
-								<?php include('includes/boissons.html'); ?>
-							</select>
-							<h2>Choisissez votre premier dessert</h2>
-							<select name="dessertDegustacion">
-								<?php include('includes/desserts.html'); ?>
-							</select>
-							<h2>Choisissez votre second dessert</h2>
-							<select name="dessertDegustacion2">
-								<?php include('includes/desserts.html'); ?>
-							</select>
-							<input type="submit" name="submitDegustacion" value="Valider" onclick="calculDegustacion();" />
-						</form>
-						<div class="clear"></div>
-						
-				</div>
-				
-				<li class="see-more mt10">FORMULE SALADE QUINOA</li>
-				<div id="salade">
-					<span class="title">Quinoa, Mozzarella, tomates, maïs sauce chimichurri</span>
-					<span class="description clearLeft">Quinoa, tomates, maïs, poulet mariné chimichurri</span>
-					<img src="img/commande/bag.png" alt="Sélectionner ce menu" width="23" height="23" class="see-more bag" data-content-id="formSalade" />
-					<span class="prix prixSalade">12,50 €</span>
-						
-						<form action="" method="post" id="formSalade" class="content-toggle">
-							<h2>Choisissez vos 2 empanadas</h2>
-							<label class="boissonSaladeLabel">Choisissez votre boisson</label>
-							<select name="boissonSalade">
-								<?php include('includes/boissons.html'); ?>
-							</select><br />
-							<label class="dessertSaladeLabel">Choisissez votre dessert</label>
-							<select name="dessertSalade">
-								<?php include('includes/desserts.html'); ?>
-							</select>
-							<input type="submit" name="submitSalade" value="Valider" onclick="calculSalade();" />
-						</form>
-						<div class="clear"></div>
-						
-				</div>
-				
-				<form action="" method="post" id="formGeneral">
-				
-				<li class="see-more" data-content-id="empanalade">EMPANADAS</li>
-				<div id="empanalade" class="content-toggle">
-					<p >
-						Nos empanadas sont préparées quotidiennement dans nos cuisines, à base de produits frais. 
-						Nos viandes sont d'origine française excepté le chorizo argentin.
+			<div id="aEmporter">
+				<img src="img/commande/big-bag.png" alt="Commandez à emporter chez Buena Onda" width="33%" id="bigBag" />
+				<img src="img/commande/bandeau-emporter.png" alt="Commandez à emporter chez Buena Onda" width="100%" />
+				<h2 class="vagRounded blue">À Emporter</h2>
+				<ul id="card-content">
+					<p id="intro">
+						<span class="vagRounded"><span class="blue">Vous êtes dans le coin et vous avez un petit creux...</span><br />
+						Commandez ici et venez chercher votre repas dans notre restaurant le plus proche.</span>
 					</p>
-					<span class="title">B&oelig;uf</span>
-					<span class="description">B&oelig;uf haché maison, oignons, épices argentines, &oelig;uf, olives</span>
-					<select class="numberOf" name="empanadaBoeuf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">3,50 €</span>
-					<span class="title">Burger</span>
-					<span class="description">B&oelig;uf haché, cheddar, sauce moutarde, miel, ketchup, pickles, oignons rouges</span>
-					<select class="numberOf" name="empanadaBurger"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">3,50 €</span>
-					<span class="title">Thon</span>
-					<span class="description">Thon, oignons, tomates, mimosa d'&oelig;uf dur, olives</span>
-					<select class="numberOf" name="empanadaThon"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">3,50 €</span>
-					<span class="title">Veau</span>
-					<span class="description">Sauté de veau haché maison, coriandre, tomates, citrons confis, ail</span>
-					<select class="numberOf" name="empanadaVeau"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">3,50 €</span>
-					<span class="title">Jambon & Fromage</span>
-					<span class="description">Jambon blanc, emmental, mozzarella</span>
-					<select class="numberOf" name="empanadaJambon"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">3,50 €</span>
-					<span class="title">Légumes</span>
-					<span class="description">Poivrons, oignons, tomates, confis dans du velouté de balsamique</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">3,50 €</span>
-					<span class="title">Épinards & Ricotta</span>
-					<span class="description">Épinards, ricotta, mozzarella, muscade</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">3,50 €</span>
-					<span class="title">Choriempa</span>
-					<span class="description">Chorizo argentin grillé</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">4,50 €</span>
-					<span class="title">Empanada Du Moment</span>
-					<span class="description">B&oelig;uf haché, bacon, cheddar, oignons rouges, pickles, sauce moutarde, ketchup</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">3,50 €</span>
-					<div class="clear"></div>
-				</div>
+					<li>FORMULES EMPANADAS</li>
+					<div id="empanada">
+						<span class="title titleChico">Chico</span>
+						<span class="description descriptionChico">2 empanadas, salade, boisson, dessert</span>
+						<div class="notifAndLink">
+							<img src="img/commande/bag.png" alt="Sélectionner ce menu" width="100%" class="see-more bag" data-content-id="formChico" />
+                            <?php if(count($_SESSION['formuleChico']) != 0) { echo '<div class="notif"><span>'.count($_SESSION['formuleChico']).'</span></div>'; } ?>
+						</div>
+						<span class="prix prixChico">10,50 €</span>
+						
+							<form action="includes/chico.php" method="post" id="formChico" class="content-toggle">
+								<h3>Choisissez vos 2 empanadas</h3>
+								<label>Première empanada : </label>
+								<select name="firstEmpanadaChico">
+									<?php include('includes/empanadas.html'); ?>
+								</select><br />
+								<label>Seconde empanada : </label>
+								<select name="secondEmpanadaChico">
+									<?php include('includes/empanadas.html'); ?>
+								</select><br />
+								<label>Choisissez votre boisson : </label>
+								<select name="boissonChico">
+									<?php include('includes/boissons.html'); ?>
+								</select><br />
+								<label>Choisissez votre dessert : </label>
+								<select name="dessertChico">
+									<?php include('includes/desserts.html'); ?>
+								</select>
+								<input type="submit" name="submitChico" value="Valider ma formule" />
+							</form>
+							<div class="clear"></div>
 				
-				<li class="see-more" data-content-id="dessert">DESSERTS</li>
-				<div id="dessert" class="content-toggle">
-					<span class="description noTitle">Cookie</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">3,50 €</span>
-					<span class="description noTitle">Fromage Blanc Au Dulce De Leche</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">4,50 €</span>
-					<span class="description noTitle">Compote De Pommes Au Spéculoos</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">4,50 €</span>
-					<span class="description noTitle">Crème Au Dulce De Leche</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">6,00 €</span>
-					<span class="description noTitle">Pâtisserie</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">6,00 €</span>
-					<div class="clear"></div>
-				</div>
+						<span class="title">Chango</span>
+						<span class="description">3 empanadas, salade, boisson, dessert</span>
+						<div class="notifAndLink">
+							<img src="img/commande/bag.png" alt="Sélectionner ce menu" width="100%" class="see-more bag" data-content-id="formChango" />
+                            <?php if(count($_SESSION['formuleChango']) != 0) { echo '<div class="notif"><span>'.count($_SESSION['formuleChango']).'</span></div>'; } ?>
+						</div>
+						<span class="prix prixChango">12,50 €</span>
+						
+							<form action="includes/chango.php" method="post" id="formChango" class="content-toggle">
+								<h3>Choisissez vos 3 empanadas</h3>
+								<label>Première empanada : </label>
+								<select name="firstEmpanadaChango">
+									<?php include('includes/empanadas.html'); ?>
+								</select><br />
+								<label>Deuxième empanada : </label>
+								<select name="secondEmpanadaChango">
+									<?php include('includes/empanadas.html'); ?>
+								</select><br />
+								<label>Troisième empanada : </label>
+								<select name="thirdEmpanadaChango">
+									<?php include('includes/empanadas.html'); ?>
+								</select><br />
+								<label>Choisissez votre boisson : </label>
+								<select name="boissonChango">
+									<?php include('includes/boissons.html'); ?>
+								</select><br />
+								<label>Choisissez votre dessert : </label>
+								<select name="dessertChango">
+									<?php include('includes/desserts.html'); ?>
+								</select>
+								<input type="submit" name="submitChango" value="Valider ma formule" />
+							</form>
+							<div class="clear"></div>
+							
+						<span class="title">Gaucho</span>
+						<span class="description">4 empanadas, salade, boisson, dessert</span>
+						<div class="notifAndLink">
+							<img src="img/commande/bag.png" alt="Sélectionner ce menu" width="100%" class="see-more bag" data-content-id="formGaucho" />
+                            <?php if(count($_SESSION['formuleGaucho']) != 0) { echo '<div class="notif"><span>'.count($_SESSION['formuleGaucho']).'</span></div>'; } ?>
+						</div>
+						<span class="prix prixGaucho">14,50 €</span>
 				
-				<li class="see-more" data-content-id="soft">SOFTS</li>
-				<div id="soft" class="content-toggle">
-					<span class="description noTitle">Coca 33cl</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">2,50 €</span>
-					<span class="description noTitle">Coca Zéro 33cl</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">2,50 €</span>
-					<span class="description noTitle">Ice Tea Pêche 33cl</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">2,50 €</span>
-					<span class="description noTitle">Minute Maid Pomme 33cl</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">2,50 €</span>
-					<span class="description noTitle">Seven Up 33cl</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">2,50 €</span>
-					<span class="description noTitle">Orangina 33cl</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">2,50 €</span>
-					<span class="description noTitle">Eau Gazeuse 33cl</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">2,50 €</span>
-					<span class="description noTitle">Eau Minérale 50cl</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">2,50 €</span>
-					<span class="description noTitle">Gota Plate 50cl, Eau argentine</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">4,50 €</span>
-					<span class="description noTitle">Gota pétillante 50cl, Eau argentine</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">5,00 €</span>
-					<div class="clear"></div>
-				</div>
+							<form action="includes/gaucho.php" method="post" id="formGaucho" class="content-toggle">
+								<h3>Choisissez vos 3 empanadas</h3>
+								<label>Première empanada : </label>
+								<select name="firstEmpanadaGaucho">
+									<?php include('includes/empanadas.html'); ?>
+								</select><br />
+								<label>Deuxième empanada : </label>
+								<select name="secondEmpanadaGaucho">
+									<?php include('includes/empanadas.html'); ?>
+								</select><br />
+								<label>Troisième empanada : </label>
+								<select name="thirdEmpanadaGaucho">
+									<?php include('includes/empanadas.html'); ?>
+								</select><br />
+								<label>Quatrième empanada : </label>
+								<select name="fourthEmpanadaGaucho">
+									<?php include('includes/empanadas.html'); ?>
+								</select><br />
+								<label>Choisissez votre boisson : </label>
+								<select name="boissonGaucho">
+									<?php include('includes/boissons.html'); ?>
+								</select><br />
+								<label>Choisissez votre dessert : </label>
+								<select name="dessertGaucho">
+									<?php include('includes/desserts.html'); ?>
+								</select>
+								<input type="submit" name="submitGaucho" value="Valider ma formule" />
+							</form>
+							<div class="clear"></div>
 				
-				<li class="see-more" data-content-id="beer">BIÈRE</li>
-				<div id="beer" class="content-toggle">
-					<span class="description noTitle">Quilmes 34cl, Bière argentine</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">5,00 €</span>
-					<div class="clear"></div>
-				</div>
+						<span class="title">Degustación (2 personnes)</span>
+						<span class="description clearLeft">Nos 8 empanadas différentes, salades,<br />2 boissons(Soda ou bière Argentine), 2 desserts</span>
+						<div class="notifAndLink">
+							<img src="img/commande/bag.png" alt="Sélectionner ce menu" width="100%" class="see-more bag" data-content-id="formDegustacion" />
+                            <?php if(count($_SESSION['formuleDegustacion']) != 0) { echo '<div class="notif"><span>'.count($_SESSION['formuleDegustacion']).'</span></div>'; } ?>
+						</div>
+						<span class="prix prixDegustacion">34,00 €</span>
 				
-				<li class="see-more" data-content-id="wine">VINS</li>
-				<div id="wine" class="content-toggle">
-					<span class="description noTitle">Trapiche Chardonnay - Vin Blanc</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">18,00 €</span>
-					<span class="description noTitle">Alta Cumbres Torrontes - Vin Blanc</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">22,00 €</span>
-					<span class="description noTitle">Nieto Senetiner Malbec - Vin Rouge</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">18,00 €</span>
-					<span class="description noTitle">Alta Cumbres Cabernet Sauvignon - Vin Rouge</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">22,00 €</span>
-					<span class="description noTitle">Rutini Cabernet & Malbec - Vin Rouge</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">26,00 €</span>
-					<span class="description noTitle">Piedra Negra Rosado Pinot Gris - Vin Rosé</span>
-					<select class="numberOf" name=""><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
-					<span class="prix">18,00 €</span>
-					<div class="clear"></div>
+							<form action="includes/degustacion.php" method="post" id="formDegustacion" class="content-toggle">
+								<label>Choisissez votre première boisson : </label>
+								<select name="boissonDegustacion">
+									<?php include('includes/boissons.html'); ?>
+								</select><br />
+								<label>Choisissez votre seconde boisson : </label>
+								<select name="boissonDegustacion2">
+									<?php include('includes/boissons.html'); ?>
+								</select><br />
+								<label>Choisissez votre premier dessert : </label>
+								<select name="dessertDegustacion">
+									<?php include('includes/desserts.html'); ?>
+								</select><br />
+								<label>Choisissez votre second dessert : </label>
+								<select name="dessertDegustacion2">
+									<?php include('includes/desserts.html'); ?>
+								</select><br />
+								<input type="submit" name="submitDegustacion" value="Valider ma formule" />
+							</form>
+							<div class="clear"></div>
+							
+					</div>
+					
+					<li class="see-more mt30">FORMULE SALADE QUINOA</li>
+					<div id="salade">
+						<span class="title">Quinoa, Mozzarella, tomates, maïs sauce chimichurri</span>
+						<span class="description clearLeft">Quinoa, tomates, maïs, poulet mariné chimichurri</span>
+						<div class="notifAndLink">
+							<img src="img/commande/bag.png" alt="Sélectionner ce menu" width="100%" class="see-more bag" data-content-id="formSalade" />
+                            <?php if(count($_SESSION['formuleSalade']) != 0) { echo '<div class="notif"><span>'.count($_SESSION['formuleSalade']).'</span></div>'; } ?>
+						</div>
+						<span class="prix prixSalade">12,50 €</span>
+							
+							<form action="includes/salade.php" method="post" id="formSalade" class="content-toggle">
+								<label>Choisissez votre boisson : </label>
+								<select name="boissonSalade">
+									<?php include('includes/boissons.html'); ?>
+								</select><br />
+								<label>Choisissez votre dessert : </label>
+								<select name="dessertSalade">
+									<?php include('includes/desserts.html'); ?>
+								</select>
+								<input type="submit" name="submitSalade" value="Valider ma formule" />
+							</form>
+							<div class="clear"></div>
+							
+					</div>
+					
+					<form action="includes/form.php" method="post" id="formGeneral">
+					
+					<li class="see-more mt30" data-content-id="empanalade">EMPANADAS</li>
+					<div id="empanalade" class="content-toggle">
+						<p >
+							Nos empanadas sont préparées quotidiennement dans nos cuisines, à base de produits frais. 
+							Nos viandes sont d'origine française excepté le chorizo argentin.
+						</p>
+						<span class="title">B&oelig;uf</span>
+						<span class="description">B&oelig;uf haché maison, oignons, épices argentines, &oelig;uf, olives</span>
+						<select class="numberOf" name="empBoeuf"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">3,50 €</span>
+						<span class="title">Burger</span>
+						<span class="description">B&oelig;uf haché, cheddar, sauce moutarde, miel, ketchup, pickles, oignons rouges</span>
+						<select class="numberOf" name="empBurger"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">3,50 €</span>
+						<span class="title">Thon</span>
+						<span class="description">Thon, oignons, tomates, mimosa d'&oelig;uf dur, olives</span>
+						<select class="numberOf" name="empThon"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">3,50 €</span>
+						<span class="title">Veau</span>
+						<span class="description">Sauté de veau haché maison, coriandre, tomates, citrons confits, ail</span>
+						<select class="numberOf" name="empVeau"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">3,50 €</span>
+						<span class="title">Jambon & Fromage</span>
+						<span class="description">Jambon blanc, emmental, mozzarella</span>
+						<select class="numberOf" name="empJambon"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">3,50 €</span>
+						<span class="title">Légumes</span>
+						<span class="description">Poivrons, oignons, tomates, confits dans du velouté de balsamique</span>
+						<select class="numberOf" name="empLegume"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">3,50 €</span>
+						<span class="title">Épinards & Ricotta</span>
+						<span class="description">Épinards, ricotta, mozzarella, muscade</span>
+						<select class="numberOf" name="empSpinash"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">3,50 €</span>
+						<span class="title">Choriempa</span>
+						<span class="description">Chorizo argentin grillé</span>
+						<select class="numberOf" name="empChoriempa"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">4,50 €</span>
+						<span class="title">Empanada Du Moment</span>
+						<span class="description">B&oelig;uf haché, bacon, cheddar, oignons rouges, pickles, sauce moutarde, ketchup</span>
+						<select class="numberOf" name="empMoment"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">3,50 €</span>
+						<div class="clear"></div>
+					</div>
+					
+					<li class="see-more" data-content-id="dessert">DESSERTS</li>
+					<div id="dessert" class="content-toggle">
+						<span class="description noTitle">Cookie</span>
+						<select class="numberOf" name="dessCookie"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">3,50 €</span>
+						<span class="description noTitle">Fromage Blanc Au Dulce De Leche</span>
+						<select class="numberOf" name="dessDulce"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">4,50 €</span>
+						<span class="description noTitle">Compote De Pommes Au Spéculoos</span>
+						<select class="numberOf" name="dessCompote"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">4,50 €</span>
+						<span class="description noTitle">Crème Au Dulce De Leche</span>
+						<select class="numberOf" name="dessDulcream"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">6,00 €</span>
+						<span class="description noTitle">Pâtisserie</span>
+						<select class="numberOf" name="dessPatiss"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">6,00 €</span>
+						<div class="clear"></div>
+					</div>
+					
+					<li class="see-more" data-content-id="soft">SOFTS</li>
+					<div id="soft" class="content-toggle">
+						<span class="description noTitle">Coca 33cl</span>
+						<select class="numberOf" name="coke"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">2,50 €</span>
+						<span class="description noTitle">Coca Zéro 33cl</span>
+						<select class="numberOf" name="coke0"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">2,50 €</span>
+						<span class="description noTitle">Ice Tea Pêche 33cl</span>
+						<select class="numberOf" name="iceT"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">2,50 €</span>
+						<span class="description noTitle">Minute Maid Pomme 33cl</span>
+						<select class="numberOf" name="maidApple"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">2,50 €</span>
+						<span class="description noTitle">Seven Up 33cl</span>
+						<select class="numberOf" name="sevenUp"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">2,50 €</span>
+						<span class="description noTitle">Orangina 33cl</span>
+						<select class="numberOf" name="orangina"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">2,50 €</span>
+						<span class="description noTitle">Eau Gazeuse 33cl</span>
+						<select class="numberOf" name="gaz"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">2,50 €</span>
+						<span class="description noTitle">Eau Minérale 50cl</span>
+						<select class="numberOf" name="minetRale"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">2,50 €</span>
+						<span class="description noTitle">Gota Plate 50cl, Eau argentine</span>
+						<select class="numberOf" name="gotaPlate"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">4,50 €</span>
+						<span class="description noTitle">Gota pétillante 50cl, Eau argentine</span>
+						<select class="numberOf" name="gotaPetill"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">5,00 €</span>
+						<div class="clear"></div>
+					</div>
+					
+					<li class="see-more" data-content-id="beer">BIÈRE</li>
+					<div id="beer" class="content-toggle">
+						<span class="description noTitle">Quilmes 34cl, Bière argentine</span>
+						<select class="numberOf" name="quilmes"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">5,00 €</span>
+						<div class="clear"></div>
+					</div>
+					
+					<li class="see-more" data-content-id="wine">VINS</li>
+					<div id="wine" class="content-toggle">
+						<span class="description noTitle">Trapiche Chardonnay - Vin Blanc</span>
+						<select class="numberOf" name="vin1"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">18,00 €</span>
+						<span class="description noTitle">Alta Cumbres Torrontes - Vin Blanc</span>
+						<select class="numberOf" name="vin2"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">22,00 €</span>
+						<span class="description noTitle">Nieto Senetiner Malbec - Vin Rouge</span>
+						<select class="numberOf" name="vin3"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">18,00 €</span>
+						<span class="description noTitle">Alta Cumbres Cabernet Sauvignon - Vin Rouge</span>
+						<select class="numberOf" name="vin4"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">22,00 €</span>
+						<span class="description noTitle">Rutini Cabernet & Malbec - Vin Rouge</span>
+						<select class="numberOf" name="vin5"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">26,00 €</span>
+						<span class="description noTitle">Piedra Negra Rosado Pinot Gris - Vin Rosé</span>
+						<select class="numberOf" name="vin6"><?php for($i=0; $i<11; $i++){ echo '<option value="'.$i.'">'.$i.'</option>'; } ?></select>
+						<span class="prix">18,00 €</span>
+						<div class="clear"></div>
+					</div>
+					<input type="submit" name="submitGeneral" value="Valider ma commande" class="clearLeft" />
+					</form>
+				</ul>
+								
+			</div>
+			
+			<div id="adressesMaps">
+				<div class="adresse">
+					<img src="img/commande/cadre.png" alt="cadre" width="100%" />
+					<h4 class="blue">Pour le déjeuner</h4>
+					<h5>BUENA ONDA PRONY</h5>
+					<p>
+						<span class="blue">Du lundi au vendredi de 12h à 14h30</span><br />
+						55, rue de Prony - 75017 Paris<br />
+						<span class="blue">01 77 15 82 25</span>
+					</p>
 				</div>
-				</form>
-			</ul>
+				<img src="img/commande/map-prony.png" alt="Retrouvez Buena Onda Prony" width="100%" />
+				<div class="adresse">
+					<img src="img/commande/cadre.png" alt="cadre" width="100%" />
+					<h4 class="blue">Pour le dîner</h4>
+					<h5>BUENA ONDA BATIGNOLLES</h5>
+					<p>
+						<span class="blue">Du lundi au samedi de 18h30 à minuit</span><br />
+						75, rue Legendre - 75017 Paris<br />
+						<span class="blue">01 45 89 20 90</span>
+					</p>
+				</div>
+				<img src="img/commande/map-batignolles.png" alt="Retrouvez Buena Onda Batignolles" width="100%" />
+			</div>
 			
 			<div class="clear"></div>
-			<input type="submit" name="submitGeneral" value="Valider ma commande" class="clearLeft" onclick="calculGeneral();" />
-			<div class="clear"></div>
 			
-			<?php include('includes/form.php'); ?>
+			<?php //session_destroy(); ?>
 				
 	</section>
 	
@@ -415,9 +458,6 @@
 	    });
 	});
 </script>
-
-<!-- Traitement formulaires -->
-<script type="text/javascript" src="js/form.js"></script>
 
 <!-- Simple Slide Menu -->
 <script type="text/javascript" src="js/menu.js"></script>

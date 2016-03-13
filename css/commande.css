@@ -16,21 +16,31 @@ h1#titleCommande {
 	margin: -70px 0 50px;
 	padding-right: 7%;
 }
+p.treatment, p.recap {
+	font-family: 'VAG Rounded Bold';
+	text-align: center;
+	font-size: 2.5em;
+	margin: 150px 0 40px;
+}
+p.recap {
+	font-size: 2em;
+	margin: 30px 0;
+}
 
 /* En Livraison via Deliveroo */
 #livraison {
 	float: right;
-	width: 44.7%;
+	width: 43%;
 	padding-bottom: 40px;
 	border-left: 8px solid #BD9C5F;
 	border-bottom: 8px solid #BD9C5F;
 }
-#livraison h2 {
+#livraison > h2 {
 	font-size: 1.7em;
 	text-align: left;
 	text-transform: uppercase;
 	padding-left: 14%;
-	margin: -56px 0 40px;
+	margin: -55px 0 50px;
 }
 #livraison p {
 	padding: 0 3.5%;
@@ -45,9 +55,28 @@ h1#titleCommande {
 }
 
 /* À Emporter */
-ul#card-content {
-	width: 48.4%;
+#aEmporter {
+	width: 50%;
 	float: left;
+	margin-top: -118px;
+    padding-top: 40px;
+}
+#aEmporter > img { max-width: 88%; }
+#aEmporter img#bigBag {
+	position: absolute;
+    margin: -38px 0 0 -85px;
+    width: 169px;
+    left: 50%;
+}
+#aEmporter > h2 {
+	font-size: 1.7em;
+	text-align: right;
+	text-transform: uppercase;
+	padding-right: 22%;
+	margin: -55px 0 66px;
+}
+#aEmporter p#intro { margin-bottom: 30px; }
+ul#card-content {
 	font-size: 1.1em;
 	line-height: 1.35em;
 }
@@ -59,36 +88,124 @@ ul#card-content li {
 	font-weight: bold;
 	margin-bottom: 10px;
 }
+ul#card-content li, form h3, span.title { font-family: 'VAG Rounded Bold'; }
+form h3 { font-size: 1.2em; }
+ul#card-content li form {
+	border: 1px solid white;
+}
 .content-toggle { margin-bottom: 20px; }
 .content-toggle p {
 	margin-bottom: 10px;
 	color: #049ede;
 }
-span.title, span.description , span.prix {
+span.title, span.description, span.prix {
 	display: block;
 	float: left;
 	margin-right: 2%;
+	font-size: 0.9em;
 }
 span.title {
 	clear: both;
 	color: #049ede;
 }
+span.description {
+	clear: left;
+	max-width: 72%;
+	font-family: 'Futura Condensed Medium';
+}
 span.noTitle { clear: right; }
 span.clearLeft { clear: left; }
-span.prix {
+span.prix, select.numberOf { float: right; }
+.notifAndLink {
 	float: right;
-	background: rgba(255, 255, 255, 0.1);
+	width: 26px;
+	height: 26px;
 }
-select.numberOf { float: right; }
-img.bag {
-	float: right;
-	cursor: pointer;
+.notifAndLink img.bag { cursor: pointer; }
+.notifAndLink .notif {
+	display: block;
+    position: relative;
+    top: -43px;
+    left: 17px;
+	width: 22px;
+	height: 22px;
+	background-color: #FC0D1B;
+	border-radius: 11px;
+	border: 1px solid #fff;
+	text-align: center;
+}
+.notifAndLink .notif span {
+	position: relative;
+	top: -3px;
+	color: #fff;
+	font-size: 0.75em;
 }
 form {
 	clear: left;
 	padding: 20px 0 10px 10%;
 }
+#empanada form, #salade form {
+	border: 1px solid rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 12px 0 0;
+    border-radius: 22px;
+}
 form#formGeneral { padding-left: 0; }
 input[type="submit"] {
 	display: block;
+	width: 396px;
+	height: 65px;
+	border: none;
+	background: url(../img/commande/submit-commande.png) no-repeat center top;
+	text-align: center;
+	font-family: 'VAG Rounded Bold';
+	font-size: 1.2em;
+	color: #00a0e0;
+	text-transform: uppercase;
+	outline: none;
+	cursor: pointer;
+	margin: 50px auto 30px;
+	transition: 0.2s;
+}
+#empanada input[type="submit"], #salade input[type="submit"] {
+	width: 250px;
+	height: 41px;
+	font-size: 0.9em;
+	margin: 10px auto 20px;
+	background-size: 250px 41px;
+}
+input[type="submit"]:hover, input[type="submit"]:focus { color: #fff; }
+
+/* Adresses et Cartes */
+#adressesMaps {
+	float: right;
+	width: 40%;
+	max-width: 488px;
+}
+#adressesMaps .adresse {
+	width: 100%;
+	margin: 70px 0 10px;
+	text-align: center;
+}
+#adressesMaps .adresse h4 {
+	font-family: 'Futura Condensed Medium';
+	font-size: 1.8em;
+	text-transform: uppercase;
+	margin: -192px 0 12px 0;
+}
+#adressesMaps .adresse h5 {
+	font-family: 'VAG Rounded Bold';
+	font-size: 1.5em;
+	margin: 20px 0 16px;
+}
+#adressesMaps .adresse p {
+	font-family: 'VAG Rounded Bold';
+	font-size: 1.2em;
+	line-height: 1.2em;
+	margin: 0 0 34px;
+}
+
+/* Récapitulatif Commande */
+#presentation ul {
+    padding-left: 20px;
 }

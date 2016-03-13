@@ -1,6 +1,25 @@
 /*========================*/
-/*======== Cartes ========*/
+/*====== PAGE CARTES =====*/
 /*========================*/
+
+
+/*========================*/
+/*===== GENEARAL  ========*/
+/*========================*/
+.menu-important {
+    font-family: 'VAG Rounded Bold';
+    color: #049ede;
+}
+
+.menu-mt20 {
+    margin-top: 20px;
+}
+
+/*========================*/
+/*===== Menu Card ========*/
+/*========================*/
+
+
 #linksCards {
 	width: 100%;
 	max-width: 1060px;
@@ -37,6 +56,12 @@
 	float: left;
 	margin-left: 13%;
 }
+
+
+
+/*========================*/
+/*=== Header Card ========*/
+/*========================*/
 #title-card {
 	width: 100%;
 	max-width: 1060px;
@@ -44,4 +69,213 @@
 	background: url(../img/carte/background-title-card.png) no-repeat center top;
 	background-size: contain;
 	margin: 36px auto;
+    color: #fff;
+    text-align: center;
 }
+
+    #title-card h3 {
+        font-family: 'VAG Rounded Bold';
+        padding: 30px 0 0 0;
+        font-size: 4.278em; /* 77px */
+    }
+
+    #title-card h4 {
+        letter-spacing: -0.03em;
+        font-size: 2.389em; /* 43px */
+        padding: 20px 0 0 0;
+    }
+
+    #title-card p {
+        letter-spacing: -0.03em;
+        font-size: 1.889em; /* 34px */
+        padding :0;
+    }
+
+
+/*========================*/
+/*=== Header Card ========*/
+/*========================*/
+#title-le-menu {
+	width: 100%;
+    max-width: 1060px;
+	margin: 63px auto 10px auto;
+    font-size: 2.167em; /* 39px */
+}
+
+#title-le-menu h5 {
+    width: 12%;
+    color: #00a0e0;
+    text-align: center;
+    float: left;
+    height: 4px;
+    line-height: 0em;
+}
+
+
+.blue-border {
+    width: 44%;
+    background-color: #00a0e0;
+    height: 3px;
+    float: left;
+    margin-top: 10px;
+}
+
+
+/*========================*/
+/*==== Card Content ======*/
+/*========================*/
+
+#wrapper-content {
+	width: 100%;
+    max-width: 1060px;
+    margin:auto;
+}
+
+
+#bloc-menu {
+	width: 100%;
+    margin: auto;
+    color: #a18e67;
+    font-size:  0.944em; /* 17px */
+    font-weight: bold;
+    font-family: 'Futura Condensed Medium';
+    line-height: 1.4em;
+    letter-spacing: 0.5px;
+}
+
+
+#bloc-menu-left, #bloc-menu-right {
+    width: 41%;
+    float: left;
+}
+
+#bloc-menu-left {
+    margin: 0 14% 0 2%;
+}
+
+
+
+    .menu-type {
+        margin: 0 0px 35px 0;
+
+    }
+
+    .menu-h6 {
+        font-family: 'VAG Rounded Bold';
+        font-size: 1.222em; /* 22px */
+        text-transform: uppercase;
+        display: block;
+        color: #049ede;
+    }
+
+    .menu-letter{
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        border: 2px solid #00a0e0;
+        display: inline-block;
+        margin: 5px 5px 0 0;
+        text-align: center;
+        font-family: 'VAG Rounded Bold';
+        color: #049ede;
+        line-height: 1.7em;
+    }
+
+/* Petit problème de line-height :(
+    .menu-stars {
+        font-size:2.2em;
+        line-height: 1.2em;
+    }*/
+
+
+    #picto-fait-maison {
+        position: absolute;
+        margin: -111px 0 0 30%;
+    }
+
+    #picto-fait-maison img {
+        max-width: 100%;
+        width:100%;
+    }
+
+    .menu-price, .menu-price-g, .menu-price-b {
+        float: right;
+        display: block;
+    }
+
+    .menu-price-b {
+        margin-left: 15%;
+    }
+
+
+    #picto-glass, #picto-bottle {
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        width: 43px;
+        height: 41px;
+        display: block;
+    }
+
+    #picto-glass {
+        background-image: url(../img/carte/picto-glass.png);
+    }
+
+    #picto-bottle {
+        background-image: url(../img/carte/picto-bottle.png);
+    }
+
+
+/*========================*/
+/*=== BLOCS SITUATION ====*/
+/*========================*/
+
+
+
+#bloc-situation-left, #bloc-situation-right {
+    width: 465px;
+    float: left;
+    border: 2px solid #a28f64;
+    padding: 4px;
+    font-family: 'VAG Rounded Bold';
+}
+
+#bloc-situation-left {
+    margin: 0 7% 0 2%;
+}
+
+    #bloc-adress, #bloc-map {
+        border: 6px solid #a28f64;
+    }
+
+    #bloc-adress {
+        height: 292px;
+        text-align: center;
+        line-height: 1.7em;
+    }
+        #bloc-adress-txt {
+            font-size: 1.222em; /* 22px */
+            margin : 25px 0 0 0;
+        }
+        #bloc-adress h6 {
+            font-size: 1.944em; /* 35px */
+            margin: 35px 0 0 0;
+        }
+
+        #bloc-map img {
+            max-width: 100%;
+            width: 100%;
+        }
+
+#bloc-white-arrow {
+    position: absolute;
+    margin: 65px 0 0 18%;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+
+
+

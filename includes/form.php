@@ -20,7 +20,7 @@
 		<meta name="description" content="" />
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="msapplication-TileImage" content="../img/favicon/mstile-144x144.png" />
-		<meta name="theme-color" content="#ffffff ">	
+		<meta name="theme-color" content="#ffffff " />	
 		
 		<!-- FAVICON -->
 		<link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-touch-icon-57x57.png" />

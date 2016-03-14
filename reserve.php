@@ -36,6 +36,9 @@
 		<link rel="stylesheet" media="screen" type="text/css" href="css/resetCSS.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" media="screen" type="text/css" href="css/menu.css" />
+        <link rel="stylesheet" media="screen" type="text/css" href="css/cartes.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css">
+        <link rel="stylesheet" href="css/liquid-slider.css">
 	</head>
 
 <body>
@@ -81,7 +84,32 @@
 	?>
 	
 	<section id="body">
-		
+        
+       
+     <!----- Liquid Slider ----->
+
+       <section id="main-slider" class="liquid-slider">
+           
+        <div>
+          <h2 class="title carte-dejeuner">&nbsp;</h2>
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Sed volutpat ante id mauris laoreet vestibulum. Nam blandit felis non neque cursus aliquet. Morbi vel enim dignissim massa dignissim commodo vitae quis tellus. Nunc non mollis nulla. Sed consectetur elit id mi consectetur bibendum. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Etiam suscipit nisl eget lorem pellentesque quis iaculis mi mattis. Aliquam sit amet purus lectus. Maecenas tempor ornare sollicitudin.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus 
+            
+            </p>
+        </div>
+        <div>
+            <h2 id="carte-diner" class="title">&nbsp;</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Sed volutpat ante id mauris laoreet vestibulum. Nam blandit felis non neque cursus aliquet. Morbi vel enim dignissim massa dignissim commodo vitae quis tellus. Nunc non mollis nulla. Sed consectetur elit id mi consectetur bibendum. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Etiam suscipit nisl eget lorem pellentesque quis iaculis mi mattis. Aliquam sit amet purus lectus. Maecenas tempor ornare sollicitudin.
+            </p>
+        </div>          
+
+        </section>
+            
+    </section>
+        
+        
 	</section>
 	
 	<?php include('includes/footer.html'); ?>
@@ -89,6 +117,16 @@
 <!-- JAVASCRIPTS -->
 <!-- Simple Slide Menu -->
 <script type="text/javascript" src="js/menu.js"></script>
+    
+    
+<!-- Liquid Slider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+<script src="./js/jquery.liquid-slider.min.js"></script>  
+<script>
+    $('#main-slider').liquidSlider();
+</script>
 
 </body>
 

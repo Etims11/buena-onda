@@ -97,201 +97,250 @@
            
 
             <div id="title-card"> 
-                <h2 id="high-title">POUR LE DÎNER</h2>
-                <h3 id="medium-title">C’est  Buena Onda Batignolles</h3>
+                <h3>POUR LE DÎNER</h3>
+                <h4>C’est  Buena Onda Batignolles</h4>
                 <p>Sur place et à emporter du lundi soir au samedi soir de 18h30 à minuit</p>
             </div>
            
-           <!-- Bloc title menu -->
-           <div id="title-menu">
+           <!-- Bloc title le-menu -->
+           <div id="title-le-menu"> 
                 <div class="blue-border">&nbsp;</div> 
-                LE MENU 
+                <h5>LE MENU</h5>
                 <div class="blue-border">&nbsp;</div>
-           </div>
+                <div class="clear">&nbsp;</div>
+            </div>
            
-           <!-- Bloc principal du menu -->
+           <!-- Card Content -->
+        <div id="wrapper-content">
            <div id="bloc-menu">
                <div id="bloc-menu-left">
-                   <ul>
-                       <li>
-                           EMPANADAS
-                        Le symbole même de la street food argentine. Petit chausson garni plus ou moins épicé.
-
-                            Bœuf viande hachée maison, oignons, épices argentines. 
-                            Thon thon, oignons, tomates, mimosa d’œuf dur, olives
-                            Veau sauté de veau haché maison, coriandre, tomates, citron, ail
-                            Burger boeuf hâché, sauce moutarde miel, pickles, cheddar, oignons rouge ketchup
-                            Jambon & Fromage jambon blanc, emmental, mozzarella
-                            Légumes poivrons, oignons, tomates, velouté de balsamique
-                            Epinards & Ricotta épinards, ricotta, mozzarella
-                            Choriempa chorizo argentin grillé (+1,00 €)
-                            Empanada du moment
-                        Les empanadas sont préparées quotidiennement dans nos cuisines à partir de produits frais. 
-                        Viandes d’origine française excepté le chorizo argentin.
+    
+                       <div class="menu-type">
+                           <h6 class="menu-h6">EMPANADAS</h6>
+                            <p>Le symbole même de la street food argentine. Petit chausson garni plus ou moins épicé.<br /><br /></p>
                            
-                           1 à 11 empanadas 3,50€/pièce
-                           À partir de 12 empanadas (commandées en une fois) 3,00€
-                       </li>
+                            <ul>
+                                <li><span class="menu-letter">B</span><span class="menu-important">Bœuf</span> viande hachée maison, oignons, épices argentines.</li>
+                                <li><span class="menu-letter">T</span><span class="menu-important">Thon</span> thon, oignons, tomates, mimosa d’œuf dur, olives</li>
+                                <li><span class="menu-letter">V</span><span class="menu-important">Veau</span> sauté de veau haché maison, coriandre, tomates, citron, ail</li>
+                                <li><span class="menu-letter">&nbsp;</span><span class="menu-important">Burger</span> boeuf hâché, sauce moutarde miel, pickles, cheddar, oignons rouge ketchup</li>
+                                <li><span class="menu-letter">J</span><span class="menu-important">Jambon & Fromage</span>jambon blanc, emmental, mozzarella</li>
+                                <li><span class="menu-letter">L</span><span class="menu-important">Légumes</span> poivrons, oignons, tomates, velouté de balsamique</li>
+                                <li><span class="menu-letter">E</span><span class="menu-important">Epinards & Ricotta</span> épinards, ricotta, mozzarella</li>
+                                <li><span class="menu-letter"><span class="menu-stars">*</span></span>
+                                    <span class="menu-important">Choriempa</span> chorizo argentin grillé (+1,00 €)
+                                </li>
+                                <li><span class="menu-letter">M</span><span class="menu-important">Empanada du moment</span></li>
+                                
+                                <div id="picto-fait-maison">
+                                <img src="img/carte/picto-fait-maison.png" alt="Buena Onda Fait-Maison">
+                                </div>
+                            </ul>
+                           
+                            
+                           
+                            <p><br />Les empanadas sont préparées quotidiennement dans nos cuisines à partir de produits frais.<br />
+                            Viandes d’origine française excepté le chorizo argentin.</p>
+                              
+                           <div class="menu-mt20">
+                                <span class="menu-important">1 à 11 empanadas</span> <span class="menu-price">3,50 €/pièce</span><br />
+                                <span class="menu-important">À partir de 12 empanadas</span> (commandées en une fois) <span class="menu-price">3,00 €</span>
+                           </div>
+                       </div>
 
-                       <li>
-                           ACCOMPAGNEMENTS
-                             Salade 3,00€
+                       <div class="menu-type">
+                           <h6 class="menu-h6">ACCOMPAGNEMENTS</h6>
+                             
+                            <ul>
+                                <li>Salade <span class="menu-price">3,00 €</span></li>
+                           </ul>
 
-                       </li>
+                       </div>
 
-                       <li>
-                           DESSERTS
-                            Cookie 3,50 €
-                            Fromage blanc au dulce de leche 4,50 € 
-                            Compote de pommes au Spéculoos© 4,50 €
-                            Pâtisserie 6,00 €
-                            Crème au dulce de leche 6,00 €
+                       <div class="menu-type">
+                           <h6 class="menu-h6">DESSERTS</h6>
+                           <ul>
+                                <li>Cookie <span class="menu-price">3,50 €</span></li>
+                                <li>Fromage blanc au dulce de leche <span class="menu-price">4,50 €</span></li>
+                                <li>Compote de pommes au Spéculoos©  <span class="menu-price">4,50 €</span></li>
+                                <li>Pâtisserie <span class="menu-price">6,00 €</span></li>
+                                <li>Crème au dulce de leche <span class="menu-price">6,00 €</span></li>
+                            </ul>
+                       </div>
 
-
-                       </li>
-
-                       <li>
-                           BOISSONS
-                            Soda 33cl 4,00 €
-                            Gota plate (eau argentine) 50cl 4,50 €
-                            Gota pétillante (eau argentine) 50cl 5,00 €
-                            Café Nespresso® 3,00 €
-                            Thé Kusmi® 4,00 €
-                            Maté 4,00 €
-                       </li>
-                   </ul>
-               </div>
+                       <div class="menu-type">
+                           <h6 class="menu-h6">BOISSONS</h6>
+                           <ul>
+                                <li>Soda 33cl <span class="menu-price">4,00 €</span></li>
+                                <li>Gota plate (eau argentine) 50cl <span class="menu-price">4,50 €</span></li>
+                                <li>Gota pétillante (eau argentine) 50cl <span class="menu-price">5,00 €</span></li>
+                                <li>Café Nespresso® <span class="menu-price">3,00 €</span></li>
+                                <li>Thé Kusmi® <span class="menu-price">4,00 €</span></li>
+                                <li>Maté <span class="menu-price">4,00 €</span></li>
+                            </ul>
+                       </div>
+                
+               </div> <!-- Fin #bloc-menu-left -->
 
                 <div id="bloc-menu-right">
-                   <ul>
-                       <li>
-                           Blancs
-                            Trapiche Chardonnay
-                            Terra de Luna Chardonnay & Torrontes 
-                            Etchart Torrontes
-                            Altas Cumbres Torrontes
-                            Broquel Torrontes
-                            Atamisque Chardonnay
+                   
+                    <div class="menu-type">
+                        <h6 class="menu-h6">Vins & Spiritueux 
+                            <span id="picto-bottle" class="menu-price-b">&nbsp;</span>
+                            <span id="picto-glass" class="menu-price-g">&nbsp;</span>
+                        </h6>
+                            <div class="menu-important menu-mt20">Blancs</div>
+                            <ul>
+                                <li>TRAPICHE Chardonnay 
+                                    <span class="menu-price-b">24,00 €</span>
+                                    <span class="menu-price-g">5,00 €</span>
+                                </li>
+                                <li>TERRA DE LUNA Chardonnay & Torrontes 
+                                    <span class="menu-price-b">26,00 €</span>
+                                    <span class="menu-price-g">5,00 €</span> 
+                                </li>
+                                <li>ETCHART Torrontes
+                                    <span class="menu-price-b">28,00 €</span>
+                                    <span class="menu-price-g">5,50 €</span>
+                                </li>
+                                <li>ALTAS Cumbres Torrontes
+                                    <span class="menu-price-b">31,00 €</span>
+                                    <span class="menu-price-g">6,00 €</span>  
+                                </li>
+                                <li>BROQUEL Torrontes
+                                    <span class="menu-price-b">33,00 €</span>
+                                    <span class="menu-price-g">6,50 €</span>
+                                </li>
+                                <li>ATAMISQUE Chardonnay
+                                    <span class="menu-price-b">37,00 €</span>
+                                    <span class="menu-price-g">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                </li>
+                            </ul>
+                        
+                            <div class="menu-important menu-mt20">Rouges</div>
+                            <ul>
+                                <li>SAN FELIPE Malbe
+                                    <span class="menu-price-b">23,00 €</span>
+                                    <span class="menu-price-g">4,50 €</span>
+                                </li>
+                                <li>NIETO SENETINER Merlot 
+                                    <span class="menu-price-b">23,00 €</span>
+                                    <span class="menu-price-g">4,50 €</span>
+                                </li>
+                                <li>NIETO SENETINER Malbec 
+                                    <span class="menu-price-b">27,00 €</span>
+                                    <span class="menu-price-g">5,00 €</span>
+                                </li>
+                                <li>CHUCKKER Malbec
+                                    <span class="menu-price-b">27,00 €</span>
+                                    <span class="menu-price-g">5,00 €</span>
+                                </li>
+                                <li>PIEDRA NEGRA Malbec 
+                                    <span class="menu-price-b">27,00 €</span>
+                                    <span class="menu-price-g">5,00 €</span>
+                                </li>
+                                <li>TRAPICHE OAK CAST Malbec
+                                    <span class="menu-price-b">30,00 €</span>
+                                    <span class="menu-price-g">5,50 €</span>
+                                </li>
+                                <li>Altas Cumbres Malbec 
+                                    <span class="menu-price-b">30,00 €</span>
+                                    <span class="menu-price-g">5,50 €</span>
+                                </li>
+                                <li>ALTAS CUMBRES Cabernet 
+                                    <span class="menu-price-b">32,00 €</span>
+                                    <span class="menu-price-g">6,00 €</span>
+                                </li>
+                                <li>BROQUEL Malbec
+                                    <span class="menu-price-b">36,00 €</span>
+                                    <span class="menu-price-g">6,50 €</span>
+                                </li>
+                                <li>RUTINI Cabernet & Malbec 
+                                    <span class="menu-price-b">39,00 €</span>
+                                    <span class="menu-price-g">7,00 €</span>
+                                </li>
+                                <li>ATAMISQUE Malbec
+                                    <span class="menu-price-b">44,00 €</span>
+                                    <span class="menu-price-g">8,00 €</span>
+                                </li>
+                            </ul>
                            
-                           Rouges
-                            San Felipe Malbec
-                            Nieto Senetiner Merlot 
-                            Nieto Senetiner Malbec 
-                            Chuckker Malbec
-                            Piedra Negra Malbec 
-                            Trapiche Oak Cast Malbec 
-                            Altas Cumbres Malbec 
-                            Altas Cumbres Cabernet 
-                            Broquel Malbec
-                            Rutini Cabernet & Malbec 
-                            Atamisque Malbec
+                             <div class="menu-important menu-mt20">Rosé</div>
+                             <ul>
+                                <li>PIEDRA NEGRA ROSADO Pinot Gris
+                                    <span class="menu-price-b">25,00 €</span>
+                                    <span class="menu-price-g">5,00 €</span>
+                                 </li>
+                             </ul>
                            
-                           Rosé
-                            Piedra Negra rosado Pinot Gris
-                           
-                           Alcool
-                            Quilmes (Bière argentine) 34 cl 
-                            Legui
-                            Rum
-                            Fernet Branca
+                            <div class="menu-important menu-mt20">Alcool</div>
+                            <ul>
+                                <li>QUILMES (Bière argentine) 34 cl 
+                                    <span class="menu-price-b">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <span class="menu-price-g">5,00 €</span>
+                                </li>
+                                <li>LEGUI
+                                    <span class="menu-price-b">38,00 €</span>
+                                    <span class="menu-price-g">5,00 €</span>  
+                                </li>
+                                <li>RUM
+                                    <span class="menu-price-b">45,00 €</span>
+                                    <span class="menu-price-g">7,00 €</span>
+                                </li>
+                                <li>FERNET BRANCA
+                                    <span class="menu-price-b">45,00 €</span>
+                                    <span class="menu-price-g">8,00 €</span>
+                                </li>                           
+                            </ul>
+                        
+                       </div>
 
-                       </li>
+                       <div class="menu-type">
+                           <h6 class="menu-h6">BUENAONDA TRAITEUR</h6>
+                           <ul>
+                               <li><span class="menu-important">1 à 6 empanadas</span><span class="menu-price">3,20 €/pièce</span></li>
+                               <li><span class="menu-important">7 à 11 empanadas</span><span class="menu-price">3,00 €</span></li>
+                               <li><span class="menu-important">À partir de 12 empanadas</span><span class="menu-price">2,80 €</span><br>
+                                   Épicérie et Vins argentins à emporter, nous consulter.</li>
+                               <li>
+                            </ul>
 
-                       <li>
-                           BUENAONDA TRAITEUR
-                            1 à 6 empanadas
-                            7 à 11 empanadas
-                            À partir de 12 empanadas
-                            Épicérie et Vins argentins à emporter, nous consulter.
-
-                       </li>
+                       </div>
                        
-                       <li>
-                            5,00 €
-                            5,00 € 
-                            5,50 € 
-                            6,00 € 
-                            6,50 €
-                            -
-
-                            4,50 € 
-                            4,50 € 
-                            5,00 € 
-                            5,00 € 
-                            5,00 € 
-                            5,50 € 
-                            5,50 € 
-                            6,00 € 
-                            6,50 € 
-                            7,00 € 
-                            8,00 €
-
-                            5,00 €
-
-                            5,00 € 
-                            5,00 € 
-                            7,00 € 
-                            8,00 €
-                       </li>
-                       
-                       <li>
-                            24,00 € 
-                            26,00 € 
-                            28,00 € 
-                            31,00 € 
-                            33,00 € 
-                            37,00 € 
-
-                            23,00 € 
-                            23,00 € 
-                            27,00 € 
-                            27,00 € 
-                            27,00 € 
-                            30,00 € 
-                            30,00 € 
-                            32,00 € 
-                            36,00 € 
-                            39,00 € 
-                            44,00 €
-
-                            25,00 €
-
-                            -
-                            38,00 € 
-                            45,00 € 
-                            45,00 €
-                       
-                           
-                            3,20 €/pièce
-                            3,00 €
-                            2,80 € 
-                       </li>
-                   </ul>
-               </div>
-           </div>
+                     
+               </div> <!-- Fin #bloc-menu-right -->
+               <div class="clear">&nbsp;</div>
+           </div> <!-- fin #bloc-menu -->
            
             <!-- 2 Blocs situation -->
            <div id="bloc-situation">
-               <div id="bloc-border-adress">
+               <div id="bloc-situation-left">
                     <div id="bloc-adress">
-                        BUENA ONDA BATIGNOLLES
-                        Dîner : du lundi au samedi
-                        Déjeuner & Dîner : samedi
+                        <h6 class="menu-important">BUENA ONDA BATIGNOLLES</h6>
+                        <p id="bloc-adress-txt">
+                        <span class="menu-important">Dîner :</span> du lundi au samedi<br />
+                        <span class="menu-important">Déjeuner & Dîner :</span> samedi <br /><br />
 
-                        75, rue Legendre - 75017 Paris 
-                        01 45 89 20 90
-                        buenaonda75017@gmail.com
+                        75, rue Legendre - 75017 Paris <br />
+                        <span class="menu-important">01 45 89 20 90<br />
+                            buenaonda75017@gmail.com</span>
+                        </p>
                     </div>
                </div>
 
-               <div id="bloc-white-arrow"> &nbsp;</div>
+               <div id="bloc-white-arrow">
+                    <img src="img/carte/white-arrow.png" alt="Situation">
+               </div>
                
-               <div id="bloc-border-map">
+               <div id="bloc-situation-right">
                    <div id="bloc-map">
-                        <img src="img/cartes/map.jpg" alt="Map Buena Onda" />
+                        <img src="img/carte/map.jpg" alt="Map Buena Onda" />
                    </div>
                </div>
+           <div class="clear">&nbsp;</div>
            </div>
+            
+        </div> <!-- Fin #wrapper-content -->
 
         </section>
 			
